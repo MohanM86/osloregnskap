@@ -3,6 +3,7 @@ import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
 import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { AnimatedStat, BarChart, TimelineChart, DonutChart, FAQAccordion, CompactCatalog } from '@/lib/client-components';
 import { IconPin, IconBuilding, IconChart, IconCoin, IconBook, IconShield, IconCalendar, SectionLabel } from '@/lib/icons';
+import { HeroSearch } from '@/lib/hero-search';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
@@ -83,6 +84,8 @@ export default function HomePage() {
           <span className="hero-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> {bydeler.length} bydeler</span>
           <span className="hero-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> Offentlige data</span>
         </div>
+
+        <HeroSearch />
       </section>
 
       {/* Stats */}

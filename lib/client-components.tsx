@@ -218,6 +218,18 @@ export function FirmExplorer({
   const [sortBy, setSortBy] = useState<'name' | 'year-new' | 'year-old' | 'bydel'>('name');
   const [showAll, setShowAll] = useState(false);
 
+  // Read ?sok= param from URL on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const sok = params.get('sok');
+      if (sok) {
+        setQuery(sok);
+        setShowAll(true);
+      }
+    }
+  }, []);
+
   const filtered = useMemo(() => {
     let result = [...firms];
 
