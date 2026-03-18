@@ -57,18 +57,46 @@ export default function RegnskapsforerNordstrandPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Nordstrand som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Nordstrand i Oslo dekker områdene Nordstrand, Bekkelaget, Lambertseter, Ljan og Nordstrandshøgda.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet på Nordstrand</h2>
+        <p>
+          Nordstrand har {firms.length} registrerte regnskapsfirmaer og er en veletablert
+          bydel for regnskapstjenester sør i Oslo. Bydelen har en lang tradisjon
+          for lokalt næringsliv med {firms.filter(f => f.naeringskode === "69.202").length} regnskapsførere og {firms.filter(f => f.naeringskode === "69.201").length} revisjonsfirmaer.
+          Det eldste firmaet ble stiftet i {Math.min(...firms.map(f => f.stiftet ? parseInt(f.stiftet.substring(0,4)) : 9999))}.
+        </p>
+
+        <h2>Lokalt næringsliv på Nordstrand</h2>
+        <p>
+          Nordstrand dekker områder som Bekkelaget, Lambertseter, Ljan og
+          Nordstrandshøgda. Bydelen er primært et rolig boligområde, men har
+          et aktivt lokalt næringsliv med håndverkere, tjenesteytere, småbutikker
+          og selvstendige konsulenter. Mange beboere driver enkeltpersonforetak
+          eller små aksjeselskaper ved siden av eller som hovedvirksomhet.
         </p>
         <p>
-          Regnskapsfirmaer i Nordstrand tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          Regnskapsfirmaer på Nordstrand betjener typisk disse lokale bedriftene
+          og kjenner forholdene i området godt. Flere av kontorene har vært
+          etablert i bydelen i mange år og har bygget opp solid erfaring med
+          de bransjene som dominerer lokalt.
         </p>
+
+        <h2>Praktiske hensyn på Nordstrand</h2>
+        <p>
+          For bedrifter og næringsdrivende på Nordstrand kan det være praktisk
+          å bruke et lokalt regnskapskontor. Kort reisevei til fysiske møter,
+          kjennskap til lokale forhold og ofte mer personlig service enn hva
+          du får hos de store sentrumskontorene. Prisene er gjerne noe lavere
+          enn i sentrum og på Frogner.
+        </p>
+        <p>
+          Alternativt kan du bruke en regnskapsfører i en annen bydel og
+          samarbeide digitalt. Med skybaserte systemer spiller beliggenhet
+          liten praktisk rolle for selve regnskapsarbeidet.
+          <Link href="/hva-koster-regnskapsforer-oslo/">Se typiske priser</Link>.
+        </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>

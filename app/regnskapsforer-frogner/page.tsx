@@ -57,18 +57,51 @@ export default function RegnskapsforerFrognerPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Frogner som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Frogner i Oslo dekker områdene Bygdøy allé, Frogner plass, Solli plass, Elisenberg og Majorstuen.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet på Frogner</h2>
+        <p>
+          Frogner er Oslos nest største bydel for regnskapstjenester med {firms.length} registrerte
+          firmaer. Bydelen har en sterk tradisjon for profesjonelle tjenester og er hjemsted
+          for mange veletablerte regnskapsbyråer. {firms.filter(f => f.naeringskode === "69.202").length} av firmaene driver med
+          regnskapsføring, mens {firms.filter(f => f.naeringskode === "69.201").length} er revisjonsfirmaer.
         </p>
         <p>
-          Regnskapsfirmaer i Frogner tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          Regnskapsfirmaene på Frogner har lang fartstid — det eldste ble stiftet i {Math.min(...firms.map(f => f.stiftet ? parseInt(f.stiftet.substring(0,4)) : 9999))}.
+          Denne erfaringen gjenspeiles i høy faglig kvalitet og bred kompetanse innen
+          krevende regnskapsoppdrag.
         </p>
+
+        <h2>Næringslivet på Frogner</h2>
+        <p>
+          Frogner er kjent for sine eksklusive handlegater, ambassader og velstående
+          boligstrøk. Langs Bygdøy allé, rundt Frogner plass og ved Solli plass
+          finner du et konsentrert næringsliv dominert av advokatfirmaer,
+          konsulentselskaper, eiendomsmeglere og finansielle rådgivere. Mange
+          selvstendige konsulenter og frilansere har også base i bydelen.
+        </p>
+        <p>
+          Regnskapsførere på Frogner betjener ofte kunder med komplekse økonomiske
+          forhold — holdingselskaper, eiendomsporteføljer, internasjonale inntekter
+          og avanserte selskapsstrukturer. Dersom du har denne typen behov, kan
+          et regnskapskontor på Frogner ha relevant spisskompetanse.
+        </p>
+
+        <h2>Velge regnskapsfører på Frogner</h2>
+        <p>
+          Med {firms.length} firmaer å velge mellom har du god valgfrihet på Frogner. Sjekk
+          at regnskapsføreren har <Link href="/autorisert-regnskapsforer/">gyldig
+          autorisasjon</Link> og erfaring med din type bedrift. Frogner har en god
+          miks av store byråer med bred kompetanse og mindre kontorer som gir
+          tett personlig oppfølging.
+        </p>
+        <p>
+          Prisene på Frogner er sammenlignbare med sentrum — noe høyere enn
+          gjennomsnittet i Oslo, men du får gjerne tilgang til regnskapsførere
+          med lang erfaring og spesialistkompetanse.
+          <Link href="/hvordan-velge-regnskapsforer-oslo/"> Les vår guide for valg av regnskapsfører</Link>.
+        </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>

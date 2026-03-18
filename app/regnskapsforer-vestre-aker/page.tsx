@@ -57,18 +57,36 @@ export default function RegnskapsforerVestreakerPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Vestre Aker som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Vestre Aker i Oslo dekker områdene Vinderen, Slemdal, Holmenkollen, Røa og Hovseter.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet i Vestre Aker</h2>
+        <p>
+          Vestre Aker har {firms.length} registrerte regnskapsfirmaer. Bydelen er en stor bydel vest i Oslo med velstående boligområder og noe næringsvirksomhet. Mange beboere driver konsulentvirksomhet eller har holdingselskaper.
+          Av firmaene driver {firms.filter(f => f.naeringskode === "69.202").length} med regnskapsføring og bokføring.
+          {firms.filter(f => f.mvaRegistrert).length} er MVA-registrerte.
+        </p>
+
+        <h2>Næringslivet i Vestre Aker</h2>
+        <p>
+          Vestre Aker dekker områdene Vinderen, Slemdal, Holmenkollen, Røa og Hovseter. Regnskapsfirmaene i bydelen betjener
+          typisk privatpersoner med komplekse økonomiske forhold, holdingselskaper og selvstendige konsulenter. Å velge en lokal regnskapsfører kan gi
+          fordeler i form av kortere reisevei til møter, kjennskap til lokale
+          næringsforhold og ofte lavere priser enn i sentrum.
+        </p>
+
+        <h2>Velge regnskapsfører i Vestre Aker</h2>
+        <p>
+          Med {firms.length} regnskapsfirmaer i Vestre Aker har du valgmuligheter lokalt.
+          Sjekk at regnskapsføreren har <Link href="/autorisert-regnskapsforer/">gyldig
+          autorisasjon</Link> og erfaring med din bransje. Dersom du ikke finner
+          et passende kontor i Vestre Aker, kan du enkelt samarbeide med en
+          regnskapsfører i en annen bydel via skybaserte systemer.
         </p>
         <p>
-          Regnskapsfirmaer i Vestre Aker tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          <Link href="/hvordan-velge-regnskapsforer-oslo/">Les vår guide for valg av regnskapsfører</Link> eller
+          <Link href="/hva-koster-regnskapsforer-oslo/"> se typiske priser</Link>.
         </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>

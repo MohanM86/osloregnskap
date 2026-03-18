@@ -57,18 +57,70 @@ export default function RegnskapsforerSentrumPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Sentrum som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Sentrum i Oslo dekker områdene Karl Johans gate, Aker Brygge, Bjørvika, Vika, Majorstuen og Grønland.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet i Oslo sentrum</h2>
+        <p>
+          Oslo sentrum er det absolutte tyngdepunktet for regnskapstjenester i hovedstaden.
+          Med {firms.length} registrerte regnskapsfirmaer har sentrum den klart høyeste konsentrasjonen
+          i byen — nesten tre ganger så mange som nest største bydel. Her finner du alt fra
+          internasjonale revisjonsselskaper med hundrevis av ansatte til spesialiserte
+          enkeltmannskontorer som betjener nisjebransjer.
         </p>
         <p>
-          Regnskapsfirmaer i Sentrum tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          Av firmaene i sentrum driver {firms.filter(f => f.naeringskode === "69.202").length} med regnskapsføring og bokføring, mens
+          {firms.filter(f => f.naeringskode === "69.201").length} er revisjonsfirmaer. Det eldste firmaet ble stiftet i {Math.min(...firms.map(f => f.stiftet ? parseInt(f.stiftet.substring(0,4)) : 9999))}, mens
+          det nyeste kom til i {Math.max(...firms.map(f => f.stiftet ? parseInt(f.stiftet.substring(0,4)) : 0))}. Denne blandingen av erfarne og nye aktører gir
+          et dynamisk marked med god konkurranse på pris og kvalitet.
         </p>
+
+        <h2>Næringslivet i Oslo sentrum</h2>
+        <p>
+          Sentrum huser hovedkontorene til mange av Norges største selskaper innen finans,
+          teknologi, media og konsulentvirksomhet. Aker Brygge og Vika er tunge finansklynger
+          der banker, meglerhus og investeringsselskaper holder til. Bjørvika har utviklet seg
+          til et teknologi- og innovasjonssenter med Barcode-rekken som adresse for flere
+          store konsern. Karl Johans gate og områdene rundt er sentrum for handel, servering
+          og kultur.
+        </p>
+        <p>
+          Denne bredden i næringslivet gjenspeiles i regnskapstilbudet. Du finner
+          regnskapsførere som spesialiserer seg på finans og verdipapirer, IT-selskaper
+          med komplekse internasjonale strukturer, restaurant og uteliv med sine særegne
+          regnskapsutfordringer, og handelsvirksomheter med høyt transaksjonsvolum.
+        </p>
+
+        <h2>Fordeler med regnskapsfører i sentrum</h2>
+        <p>
+          Den største fordelen med å velge regnskapsfører i sentrum er tilgangen til
+          bred kompetanse. Sentralt beliggende kontorer tiltrekker seg ofte de mest
+          erfarne regnskapsførerne, og mange har spesialistkompetanse innen krevende
+          områder som internasjonal skatt, konsernregnskap og transaksjonsrådgivning.
+        </p>
+        <p>
+          For bedrifter som verdsetter fysiske møter er sentrum lett tilgjengelig med
+          kollektivtransport fra alle deler av Oslo. Mange regnskapskontorer ligger i
+          gangavstand fra T-banestasjoner og bussholdeplasser.
+        </p>
+        <p>
+          Ulempen kan være at kontorleie i sentrum er dyrt, noe som kan gjenspeiles i
+          høyere timepriser. For bedrifter som primært kommuniserer digitalt kan et
+          kontor i en annen bydel gi like god kvalitet til lavere pris.
+        </p>
+
+        <h2>Typiske priser i sentrum</h2>
+        <p>
+          Regnskapsførere i sentrum har gjennomsnittlig noe høyere priser enn i
+          ytterbydelene, typisk 600–1 500 kroner per time. Fastpriser for
+          enkeltpersonforetak starter fra rundt 1 500 kroner per måned, mens
+          aksjeselskaper med ansatte betaler fra 5 000 kroner og oppover.
+          De største byråene i sentrum betjener primært mellomstore og store
+          bedrifter med priser deretter.
+        </p>
+        <p>
+          <Link href="/hva-koster-regnskapsforer-oslo/">Les mer om priser for regnskapsfører i Oslo</Link>.
+        </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>

@@ -57,18 +57,36 @@ export default function RegnskapsforerSagenePage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Sagene som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Sagene i Oslo dekker områdene Sagene, Bjølsen, Ila og Iladalen.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet i Sagene</h2>
+        <p>
+          Sagene har {firms.length} registrerte regnskapsfirmaer. Bydelen er en sentrumsnær bydel som har blitt stadig mer populær blant unge bedriftsgründere. Med sin nærhet til sentrum og Grünerløkka tiltrekker bydelen kreative og innovative virksomheter.
+          Av firmaene driver {firms.filter(f => f.naeringskode === "69.202").length} med regnskapsføring og bokføring.
+          {firms.filter(f => f.mvaRegistrert).length} er MVA-registrerte.
+        </p>
+
+        <h2>Næringslivet i Sagene</h2>
+        <p>
+          Sagene dekker områdene Sagene, Bjølsen, Ila og Iladalen. Regnskapsfirmaene i bydelen betjener
+          typisk gründere, frilansere og kreative virksomheter som verdsetter den sentrumsnære beliggenheten. Å velge en lokal regnskapsfører kan gi
+          fordeler i form av kortere reisevei til møter, kjennskap til lokale
+          næringsforhold og ofte lavere priser enn i sentrum.
+        </p>
+
+        <h2>Velge regnskapsfører i Sagene</h2>
+        <p>
+          Med {firms.length} regnskapsfirmaer i Sagene har du valgmuligheter lokalt.
+          Sjekk at regnskapsføreren har <Link href="/autorisert-regnskapsforer/">gyldig
+          autorisasjon</Link> og erfaring med din bransje. Dersom du ikke finner
+          et passende kontor i Sagene, kan du enkelt samarbeide med en
+          regnskapsfører i en annen bydel via skybaserte systemer.
         </p>
         <p>
-          Regnskapsfirmaer i Sagene tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          <Link href="/hvordan-velge-regnskapsforer-oslo/">Les vår guide for valg av regnskapsfører</Link> eller
+          <Link href="/hva-koster-regnskapsforer-oslo/"> se typiske priser</Link>.
         </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>

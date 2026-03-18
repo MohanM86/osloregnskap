@@ -57,18 +57,36 @@ export default function RegnskapsforerAlnaPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Alna som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Alna i Oslo dekker områdene Furuset, Ellingsrud, Lindeberg, Haugerud og Trosterud.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet i Alna</h2>
+        <p>
+          Alna har {firms.length} registrerte regnskapsfirmaer. Bydelen er en bydel i Groruddalen med store næringsområder. Alnabru er Norges største godsterminal og bydelen har et aktivt næringsliv innen logistikk og handel.
+          Av firmaene driver {firms.filter(f => f.naeringskode === "69.202").length} med regnskapsføring og bokføring.
+          {firms.filter(f => f.mvaRegistrert).length} er MVA-registrerte.
+        </p>
+
+        <h2>Næringslivet i Alna</h2>
+        <p>
+          Alna dekker områdene Furuset, Ellingsrud, Lindeberg, Haugerud og Trosterud. Regnskapsfirmaene i bydelen betjener
+          typisk bedrifter innen transport, logistikk og handel som opererer fra Alnabru-området. Å velge en lokal regnskapsfører kan gi
+          fordeler i form av kortere reisevei til møter, kjennskap til lokale
+          næringsforhold og ofte lavere priser enn i sentrum.
+        </p>
+
+        <h2>Velge regnskapsfører i Alna</h2>
+        <p>
+          Med {firms.length} regnskapsfirmaer i Alna har du valgmuligheter lokalt.
+          Sjekk at regnskapsføreren har <Link href="/autorisert-regnskapsforer/">gyldig
+          autorisasjon</Link> og erfaring med din bransje. Dersom du ikke finner
+          et passende kontor i Alna, kan du enkelt samarbeide med en
+          regnskapsfører i en annen bydel via skybaserte systemer.
         </p>
         <p>
-          Regnskapsfirmaer i Alna tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          <Link href="/hvordan-velge-regnskapsforer-oslo/">Les vår guide for valg av regnskapsfører</Link> eller
+          <Link href="/hva-koster-regnskapsforer-oslo/"> se typiske priser</Link>.
         </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>

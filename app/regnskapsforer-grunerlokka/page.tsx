@@ -57,18 +57,47 @@ export default function RegnskapsforerGrunerlokkaPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Grünerløkka som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Grünerløkka i Oslo dekker områdene Grünerløkka, Torshov, Sofienberg, Rodeløkka og Dælenenga.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet på Grünerløkka</h2>
+        <p>
+          Grünerløkka har {firms.length} registrerte regnskapsfirmaer og er en av bydelene
+          med sterkest vekst i regnskapsbransjen. Bydelen har de siste tiårene
+          utviklet seg fra et tradisjonelt arbeiderstrøk til et av Oslos mest dynamiske
+          områder for gründervirksomhet og kreative næringer. Alle {firms.filter(f => f.mvaRegistrert).length} firmaer er
+          MVA-registrerte.
+        </p>
+
+        <h2>Gründermiljøet på Grünerløkka</h2>
+        <p>
+          Grünerløkka er kjent for sitt levende startup-miljø, kreative byråer,
+          kaféer, restauranter og butikker. Mange av bedriftene i bydelen er unge
+          og vekstorienterte, med behov for regnskapsførere som forstår utfordringene
+          til oppstartsbedrifter — fra stiftelse og kapitaltilførsel til skalering
+          og potensielle oppkjøp.
         </p>
         <p>
-          Regnskapsfirmaer i Grünerløkka tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          Regnskapsfirmaene på Grünerløkka har gjerne spesialisert seg på nettopp
+          denne typen kunder. De tilbyr fleksible løsninger tilpasset bedrifter i
+          rask vekst, og mange har erfaring med teknologiselskaper, e-handel,
+          kreative byråer og restaurantdrift.
         </p>
+
+        <h2>Regnskap for oppstartsbedrifter</h2>
+        <p>
+          For oppstartsbedrifter på Grünerløkka er det spesielt viktig å velge
+          en regnskapsfører som forstår vekstselskapers behov. Dette inkluderer
+          håndtering av emisjoner og kapitalforhøyelser, opsjonsprogrammer for
+          ansatte, offentlige tilskudd som Skattefunn og Innovasjon Norge-støtte,
+          og rapportering til investorer.
+        </p>
+        <p>
+          En god regnskapsfører for startups gjør mer enn å føre tall — de
+          hjelper deg med å forstå enhetskostnadene dine, holde oversikt over
+          burn rate, og levere økonomisk rapportering som investorer forventer.
+          <Link href="/regnskap-for-as-oslo/">Les mer om regnskap for AS</Link>.
+        </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>

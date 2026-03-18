@@ -57,18 +57,36 @@ export default function RegnskapsforerStovnerPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Stovner som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Stovner i Oslo dekker områdene Stovner, Vestli, Fossum og Haugenstua.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet i Stovner</h2>
+        <p>
+          Stovner har {firms.length} registrerte regnskapsfirmaer. Bydelen er en bydel i Groruddalen med et lokalt næringsliv preget av handel og tjenesteyting. Stovner senter er bydelens naturlige handelssentrum.
+          Av firmaene driver {firms.filter(f => f.naeringskode === "69.202").length} med regnskapsføring og bokføring.
+          {firms.filter(f => f.mvaRegistrert).length} er MVA-registrerte.
+        </p>
+
+        <h2>Næringslivet i Stovner</h2>
+        <p>
+          Stovner dekker områdene Stovner, Vestli, Fossum og Haugenstua. Regnskapsfirmaene i bydelen betjener
+          typisk lokale bedrifter innen handel, transport og tjenesteyting som kjenner Groruddalens marked. Å velge en lokal regnskapsfører kan gi
+          fordeler i form av kortere reisevei til møter, kjennskap til lokale
+          næringsforhold og ofte lavere priser enn i sentrum.
+        </p>
+
+        <h2>Velge regnskapsfører i Stovner</h2>
+        <p>
+          Med {firms.length} regnskapsfirmaer i Stovner har du valgmuligheter lokalt.
+          Sjekk at regnskapsføreren har <Link href="/autorisert-regnskapsforer/">gyldig
+          autorisasjon</Link> og erfaring med din bransje. Dersom du ikke finner
+          et passende kontor i Stovner, kan du enkelt samarbeide med en
+          regnskapsfører i en annen bydel via skybaserte systemer.
         </p>
         <p>
-          Regnskapsfirmaer i Stovner tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          <Link href="/hvordan-velge-regnskapsforer-oslo/">Les vår guide for valg av regnskapsfører</Link> eller
+          <Link href="/hva-koster-regnskapsforer-oslo/"> se typiske priser</Link>.
         </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>

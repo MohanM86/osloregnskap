@@ -57,18 +57,44 @@ export default function RegnskapsforerOstensjoPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Om Østensjø som næringsområde</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Østensjø i Oslo dekker områdene Bøler, Manglerud, Skullerud, Godlia og Oppsal.
-          Med {firms.length} regnskapsfirmaer har bydelen et godt utvalg av regnskapstjenester
-          for lokale bedrifter og næringsdrivende.
+      <section style={{ marginTop: '2rem' }} className="prose">
+
+        <h2>Regnskapsmarkedet i Østensjø</h2>
+        <p>
+          Østensjø er en av Oslos største bydeler for regnskapstjenester med {firms.length}
+          registrerte firmaer. Bydelen har et aktivt næringsliv med flere næringsparker
+          og kontormiljøer. {firms.filter(f => f.naeringskode === "69.202").length} firmaer driver med regnskapsføring, og nesten
+          alle ({firms.filter(f => f.mvaRegistrert).length}) er MVA-registrerte, noe som tyder på etablerte og aktive virksomheter.
+        </p>
+
+        <h2>Næringslivet i Østensjø</h2>
+        <p>
+          Østensjø dekker områder som Bøler, Manglerud, Skullerud, Godlia og Oppsal.
+          Bydelen har en god miks av bolig og næring, med flere næringsklynger langs
+          hovedveiene. Mange småbedrifter, håndverkere og tjenesteytere holder til
+          i bydelen og trenger regnskapstjenester tilpasset sine behov.
         </p>
         <p>
-          Regnskapsfirmaer i Østensjø tilbyr typisk tjenester som løpende bokføring,
-          fakturering, lønnskjøring, MVA-rapportering, årsoppgjør og skattemelding.
-          Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
+          Regnskapsførere i Østensjø betjener typisk lokale bedrifter innen håndverk,
+          handel, transport og tjenesteyting. Fordelen med et lokalt regnskapskontor
+          er at de kjenner næringslivet i området og ofte har erfaring med nettopp
+          den typen bedrifter som dominerer i bydelen.
         </p>
+
+        <h2>Fordeler med lokal regnskapsfører</h2>
+        <p>
+          Å velge en regnskapsfører i Østensjø gir deg enkel tilgang til fysiske møter
+          uten lang reisevei. Lokale regnskapsførere har gjerne lavere kontorkostnader
+          enn kontorer i sentrum, noe som kan gi gunstigere priser. Mange bedriftseiere
+          verdsetter også den personlige kontakten som et lokalt kontor kan tilby.
+        </p>
+        <p>
+          Med skybaserte regnskapssystemer trenger du riktignok ikke en lokal
+          regnskapsfører — det viktigste er kompetanse og kvalitet. Men dersom
+          du foretrekker å kunne stikke innom kontoret med bilag eller ha
+          ansikt-til-ansikt-møter, er et kontor i Østensjø en praktisk løsning.
+        </p>
+
       </section>
 
       <section style={{ marginTop: '2rem' }}>
