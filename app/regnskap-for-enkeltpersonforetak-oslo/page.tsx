@@ -77,21 +77,83 @@ export default function RegnskapENKPage() {
         </p>
       </section>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Tips for regnskap som ENK i Oslo</h2>
-        <p style={{ marginBottom: '1rem' }}>
+      <section style={{ marginTop: '2rem' }} className="prose">
+        <h2>Tips for regnskap som ENK i Oslo</h2>
+        <p>
           Hold bilagene organisert fra dag én. Skann kvitteringer og fakturaer digitalt,
           og kategoriser dem fortløpende. Å samle opp bilag til årets slutt gjør jobben
-          mye vanskeligere og øker risikoen for feil.
+          mye vanskeligere og øker risikoen for feil. Bruk en app som EZcollect, Fiken
+          eller Tripletex sin mobilapp for å ta bilde av kvitteringer med en gang.
         </p>
-        <p style={{ marginBottom: '1rem' }}>
+        <p>
           Ha separate kontoer for privat og næring. En egen bedriftskonto gjør bokføringen
-          mye enklere og gir bedre oversikt over virksomhetens økonomi.
+          mye enklere og gir bedre oversikt over virksomhetens økonomi. De fleste banker
+          tilbyr bedriftskonto til enkeltpersonforetak med lave eller ingen månedskostnader.
         </p>
         <p>
           Sett av penger til skatt løpende. Som selvstendig næringsdrivende betaler du
-          forskuddsskatt fire ganger i året. Beregn forventet skatt og sett av midler
-          fortløpende for å unngå overraskelser.
+          forskuddsskatt fire ganger i året. En god tommelfingerregel er å sette av
+          30–40 prosent av overskuddet til skatt. Da unngår du restskatt og
+          likviditetsproblemer.
+        </p>
+
+        <h2>Regnskapsprogrammer for ENK i Oslo</h2>
+        <p>
+          Dersom du velger å føre regnskapet selv, finnes det flere gode
+          regnskapsprogrammer tilpasset enkeltpersonforetak. <strong>Fiken</strong> er
+          et av de mest populære valgene for ENK — det er brukervennlig, har god
+          mobilapp og koster fra 0 kroner per måned for den enkleste versjonen.
+        </p>
+        <p>
+          <strong>Tripletex</strong> er et kraftigere alternativ som passer ENK
+          med mer aktivitet. Systemet har gode integrasjoner med banker og andre
+          verktøy, og tilbyr automatisk bankavstemmming som sparer mye tid.
+        </p>
+        <p>
+          <strong>Visma eAccounting</strong> er et annet populært valg med god
+          brukervennlighet og bred funksjonalitet. Systemet passer godt for ENK
+          som trenger fakturering, bokføring og MVA-rapportering i ett.
+        </p>
+        <p>
+          Uansett hvilket program du velger, sørg for at det er godkjent etter
+          bokføringsforskriften og at det kan levere MVA-melding direkte til
+          Skatteetaten via Altinn.
+        </p>
+
+        <h2>MVA-registrering for ENK i Oslo</h2>
+        <p>
+          Du må MVA-registrere enkeltpersonforetaket ditt når omsetningen av
+          MVA-pliktige varer og tjenester overstiger 50 000 kroner i løpet av
+          en 12-månedersperiode. MVA-registrering innebærer at du legger 25 prosent
+          MVA på dine fakturaer (eller 15/12/0 prosent avhengig av type vare/tjeneste),
+          og at du kan trekke fra MVA på dine innkjøp.
+        </p>
+        <p>
+          MVA-meldingen leveres annenhver måned — i februar, april, juni, august,
+          oktober og desember. Fristen er den 10. i leveringsmåneden. Dersom du
+          har omsetning under 1 million kroner, kan du søke om å levere årlig
+          MVA-melding i stedet.
+        </p>
+
+        <h2>Fradrag du bør kjenne til som ENK</h2>
+        <p>
+          Som selvstendig næringsdrivende i Oslo kan du trekke fra alle kostnader
+          som er nødvendige for å drive virksomheten. Vanlige fradrag inkluderer
+          kontorrekvisita og utstyr, fagbøker og kurs, reisekostnader i forbindelse
+          med jobb, telefon og internett (forholdsmessig andel), forsikringer knyttet
+          til virksomheten, og markedsføringskostnader.
+        </p>
+        <p>
+          Dersom du jobber fra hjemmekontor, kan du trekke fra en forholdsmessig andel
+          av husleie, strøm og forsikring basert på kontorets andel av boligens totale
+          areal. Standardfradraget for hjemmekontor er 1 850 kroner per år, men du
+          kan velge å bruke faktiske kostnader dersom de er høyere.
+        </p>
+        <p>
+          En regnskapsfører kan hjelpe deg med å identifisere alle fradrag du har rett på
+          og sørge for at de dokumenteres korrekt. Mange ENK-eiere går glipp av
+          legitime fradrag fordi de ikke kjenner reglene — en kostnad som ofte
+          overstiger honoraret til regnskapsføreren.
         </p>
       </section>
 

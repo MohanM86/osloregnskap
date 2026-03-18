@@ -95,20 +95,75 @@ export default function BesteRegnskapsKontorPage() {
         </p>
       </section>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Statistikk om regnskapskontor i Oslo</h2>
-        <p style={{ marginBottom: '1rem' }}>
+      <section style={{ marginTop: '2rem' }} className="prose">
+        <h2>Hva gjør et regnskapskontor «best»?</h2>
+        <p>
+          Det finnes ingen objektiv rangering av regnskapskontor. Det «beste» kontoret
+          er det som passer akkurat din bedrift, bransje og situasjon. En liten
+          frilanserkonsulent har helt andre behov enn et mellomstort eiendomsselskap.
+          Likevel finnes det noen universelle kvalitetstegn du bør se etter.
+        </p>
+        <p>
+          Et godt regnskapskontor leverer korrekt og rettidig rapportering uten at du
+          må purre. De er proaktive — de varsler om frister, foreslår optimaliseringer
+          og holder deg oppdatert på regelverksendringer som påvirker din bedrift.
+          De er tilgjengelige når du trenger dem, svarer raskt på henvendelser og
+          forklarer komplekse regnskapsspørsmål på en forståelig måte.
+        </p>
+
+        <h2>Bransjespesialisering vs. generell kompetanse</h2>
+        <p>
+          Noen regnskapskontor i Oslo har spesialisert seg på bestemte bransjer.
+          Et kontor som kjenner din bransje godt, forstår de spesifikke regnskapsreglene,
+          typiske fradragsmuligheter og vanlige fallgruver. De trenger ikke bruke tid
+          på å sette seg inn i regelverket — de kjenner det allerede.
+        </p>
+        <p>
+          Bransjer med spesielt komplekse regnskapsregler inkluderer restaurant og
+          uteliv (kontanthåndtering, tips, personalbespisning), bygg og anlegg
+          (anordningsprinsippet, solidaransvar), eiendom (avskrivninger, MVA-justeringer),
+          helse (forskjell mellom privat praksis og ansettelse), og IT/teknologi
+          (immaterielle verdier, internasjonale transaksjoner).
+        </p>
+        <p>
+          Generelle regnskapskontor kan til gjengjeld tilby bredere kompetanse og
+          tverrfaglig rådgivning. De passer godt for bedrifter med mindre bransjespesifikke
+          regnskapsbehov, som konsulentselskaper, handelsvirksomheter og tjenesteytere.
+        </p>
+
+        <h2>Regnskapssystemer — hva bør du se etter?</h2>
+        <p>
+          Et moderne regnskapskontor i Oslo bør bruke skybaserte systemer som gir deg
+          som kunde tilgang til regnskapet ditt i sanntid. De mest brukte systemene i
+          Oslo er Tripletex, Fiken, Visma, PowerOffice og Xledger. Valg av system
+          påvirker effektiviteten i samarbeidet og kan ha stor innvirkning på prisen.
+        </p>
+        <p>
+          Spør potensielle regnskapskontor om hvilke systemer de støtter, om du
+          får tilgang til å se regnskapet selv, om de tilbyr automatisk bankavstemmming
+          og digital bilagsflyt, og om systemet integrerer med andre verktøy du
+          bruker (nettbutikk, prosjektstyringsverktøy, CRM). Et kontor som henger
+          etter teknologisk kan koste deg mer i lengden.
+        </p>
+
+        <h2>Statistikk om regnskapskontor i Oslo</h2>
+        <p>
           Av {firms.length} registrerte regnskapsfirmaer i Oslo er {firms.filter(f => f.naeringskode === '69.202').length} registrert
           under næringskode 69.202 (regnskapsføring og bokføring)
           og {firms.filter(f => f.naeringskode === '69.201').length} under 69.201 (revisjon).
-        </p>
-        <p style={{ marginBottom: '1rem' }}>
           {firms.filter(f => f.mvaRegistrert).length} av firmaene er MVA-registrerte, noe som
-          tyder på at de har over 50 000 kroner i omsetning og driver aktiv næringsvirksomhet.
+          tyder på aktiv næringsvirksomhet.
         </p>
         <p>
           Flest regnskapsfirmaer finner du i {bydeler[0]?.name} ({bydeler[0]?.count} stk)
-          og {bydeler[1]?.name} ({bydeler[1]?.count} stk).
+          og {bydeler[1]?.name} ({bydeler[1]?.count} stk). Det betyr ikke nødvendigvis
+          at du bør velge et kontor i sentrum — med skybaserte systemer kan et kontor
+          i en annen bydel fungere like godt, og ofte til lavere pris på grunn av
+          lavere kontorkostnader.
+        </p>
+        <p>
+          Les vår <Link href="/hvordan-velge-regnskapsforer-oslo/">komplette guide for valg av regnskapsfører</Link> for
+          en systematisk gjennomgang av alle faktorene du bør vurdere.
         </p>
       </section>
 

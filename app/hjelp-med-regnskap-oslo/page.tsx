@@ -62,15 +62,74 @@ export default function HjelpMedRegnskapPage() {
         </p>
       </section>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Viktige frister for regnskap</h2>
-        <p style={{ marginBottom: '0.5rem' }}><strong>Annenhver måned:</strong> MVA-melding (for MVA-registrerte)</p>
-        <p style={{ marginBottom: '0.5rem' }}><strong>Hver måned:</strong> A-melding (for de med ansatte)</p>
-        <p style={{ marginBottom: '0.5rem' }}><strong>31. mai:</strong> Skattemelding for ENK og AS</p>
-        <p style={{ marginBottom: '0.5rem' }}><strong>31. juli:</strong> Årsregnskap til Regnskapsregisteret (AS)</p>
-        <p style={{ marginBottom: '1rem' }}><strong>15. mars:</strong> Aksjonærregisteroppgave</p>
+      <section style={{ marginTop: '2rem' }} className="prose">
+        <h2>Viktige frister for regnskap</h2>
         <p>
-          En regnskapsfører sørger for at alle frister overholdes og at rapporteringen er korrekt.
+          Alle næringsdrivende i Oslo må forholde seg til en rekke frister gjennom året.
+          MVA-meldingen leveres annenhver måned for MVA-registrerte virksomheter, med frist
+          den 10. i leveringsmåneden. A-meldingen med lønnsinformasjon leveres hver måned
+          senest den 5. i måneden etter lønnsutbetaling. Skattemeldingen for både
+          enkeltpersonforetak og aksjeselskaper har frist 31. mai. Årsregnskapet for
+          aksjeselskaper skal sendes til Regnskapsregisteret innen 31. juli.
+          Aksjonærregisteroppgaven har frist 31. januar.
+        </p>
+        <p>
+          Å oversitte frister kan bli dyrt. Skatteetaten ilegger tvangsmulkt for forsinket
+          levering av MVA-melding og a-melding. Forsinket innsending av årsregnskap medfører
+          forsinkelsesgebyr fra Regnskapsregisteret. En regnskapsfører sørger for at alle
+          frister overholdes og varsler deg i god tid dersom dokumentasjon trengs.
+        </p>
+
+        <h2>Regnskap for nyetablerte i Oslo</h2>
+        <p>
+          Mange nyetablerte bedrifter i Oslo er usikre på hvor de skal begynne med
+          regnskapet. Det viktigste første steget er å velge et regnskapssystem og
+          etablere gode rutiner for bilagshåndtering fra starten. Det er mye enklere
+          å holde regnskapet oppdatert løpende enn å rydde opp i ettertid.
+        </p>
+        <p>
+          For <Link href="/regnskap-for-enkeltpersonforetak-oslo/">enkeltpersonforetak</Link> kan
+          du starte med et gratis eller rimelig regnskapsprogram og eventuelt engasjere
+          regnskapsfører senere når behovet vokser. For <Link href="/regnskap-for-as-oslo/">aksjeselskaper</Link> anbefaler
+          vi å engasjere regnskapsfører allerede ved stiftelsen — kravene er for
+          komplekse til at de fleste bør håndtere dem selv.
+        </p>
+
+        <h2>Opprydding i rotete regnskap</h2>
+        <p>
+          Dersom du har kommet på etterskudd med regnskapet, er det viktig å ta tak i
+          situasjonen så raskt som mulig. Jo lenger du venter, jo mer arbeid blir det
+          — og jo større blir risikoen for bøter og tilleggsskatt. Mange
+          regnskapsførere i Oslo tilbyr oppryddingstjenester der de går gjennom og
+          korrigerer tidligere bokføring, rekonstruerer manglende dokumentasjon der det
+          er mulig, og sørger for at rapportering kommer ajour.
+        </p>
+        <p>
+          Kostnaden for opprydding avhenger av hvor mye som mangler og hvor langt
+          tilbake i tid det strekker seg. Forvent å betale timepriser for denne typen
+          arbeid, typisk 800–1 500 kroner per time. For et helt år med manglende
+          bokføring kan kostnaden bli 15 000–40 000 kroner, avhengig av omfanget.
+        </p>
+
+        <h2>Digitale verktøy som forenkler regnskapet</h2>
+        <p>
+          Moderne teknologi har gjort det mye enklere å holde orden på regnskapet.
+          Skybaserte regnskapssystemer lar deg registrere bilag, sende fakturaer og
+          følge med på økonomien fra mobilen. Automatisk bankavstemmming kobler
+          transaksjoner i regnskapssystemet med kontoutskriften din, noe som
+          dramatisk reduserer manuelt arbeid.
+        </p>
+        <p>
+          Bilagsapper lar deg ta bilde av kvitteringer med mobilen og sende dem
+          direkte til regnskapssystemet. Integrasjoner mellom fakturasystemer,
+          nettbutikkplattformer og regnskapsprogrammer gjør at data flyter
+          automatisk uten manuell registrering.
+        </p>
+        <p>
+          Selv om du bruker regnskapsfører, kan disse verktøyene spare tid og
+          penger ved at rutinemessig arbeid automatiseres. Snakk med
+          <Link href="/regnskapsforer/">regnskapsføreren din</Link> om hvilke
+          verktøy som passer best for din bedrift.
         </p>
       </section>
 

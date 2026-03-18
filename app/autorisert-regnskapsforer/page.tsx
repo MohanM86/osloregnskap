@@ -90,24 +90,73 @@ export default function AutorisertPage() {
         </p>
       </section>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Sjekk autorisasjon</h2>
-        <p style={{ marginBottom: '1rem' }}>
+      <section style={{ marginTop: '2rem' }} className="prose">
+        <h2>Sjekk autorisasjon</h2>
+        <p>
           Du kan sjekke om en regnskapsfører er autorisert via Finanstilsynets register over
           autoriserte regnskapsførere. Registeret er offentlig tilgjengelig og oppdateres løpende.
+          Vi anbefaler å sjekke autorisasjonsstatusen direkte hos Finanstilsynet før du inngår avtale.
+        </p>
+
+        <h2>Statsautorisert regnskapsfører — ny tittel fra 2024</h2>
+        <p>
+          Fra 1. januar 2024 ble tittelen endret fra «autorisert regnskapsfører» til
+          «statsautorisert regnskapsfører». Endringen ble innført med den nye
+          regnskapsførerloven og innebærer en oppgradering av tittelen som understreker
+          profesjonens betydning. Kravene for å oppnå tittelen er skjerpet, med blant
+          annet krav om mastergrad eller tilsvarende for nye søkere.
         </p>
         <p>
-          Alle regnskapsfirmaer i vår oversikt er hentet  og er registrert
-          med næringskode for regnskapsføring og bokføring (69.202) eller revisjon (69.201).
-          Vi anbefaler likevel å sjekke autorisasjonsstatusen direkte hos Finanstilsynet.
+          For deg som kunde betyr dette at statsautoriserte regnskapsførere har gjennomgått
+          enda strengere krav enn tidligere. Regnskapsførere som hadde autorisasjon før
+          lovendringen beholder sin godkjenning og kan bruke den nye tittelen.
         </p>
-      </section>
 
-      <section style={{ marginTop: '2rem' }}>
-        <p style={{ textAlign: 'center' }}>
-          <Link href="/firmaer/" style={{ padding: '0.5rem 1.5rem', border: '1px solid var(--border)', display: 'inline-block' }}>
-            Se alle {firms.length} regnskapsfirmaer i Oslo →
-          </Link>
+        <h2>Regnskapsførervirksomhet — krav til selskapet</h2>
+        <p>
+          Det er ikke bare den individuelle regnskapsføreren som må være autorisert. Selve
+          regnskapsførervirksomheten må også ha godkjenning fra Finanstilsynet. Virksomheten
+          må ha en daglig leder som er statsautorisert regnskapsfører, ha forsvarlige
+          rutiner for kvalitetssikring, oppbevare klientdokumentasjon på forsvarlig måte,
+          og ha gyldig ansvarsforsikring.
+        </p>
+        <p>
+          Finanstilsynet gjennomfører jevnlige tilsyn av regnskapsførervirksomheter for
+          å sikre at kravene overholdes. Regnskap Norge gjennomfører også kvalitetskontroller
+          av sine medlemmer. Disse kontrollene gir deg som kunde en ekstra sikkerhet for
+          at regnskapskontoret holder god faglig standard.
+        </p>
+
+        <h2>Konsekvenser av å bruke uautorisert regnskapsfører</h2>
+        <p>
+          Dersom du bruker en person eller et firma uten gyldig autorisasjon til å føre
+          regnskapet ditt, kan konsekvensene være alvorlige. Regnskapet kan inneholde feil
+          som ikke oppdages før ved et bokettersyn fra Skatteetaten. Eventuelle feil i
+          MVA-rapportering kan føre til tilleggsavgift og renter. Årsregnskapet kan bli
+          underkjent av Regnskapsregisteret.
+        </p>
+        <p>
+          I tillegg har du ingen forsikringsdekning dersom den uautoriserte regnskapsføreren
+          gjør feil som påfører deg økonomisk tap. Autoriserte regnskapsførere er pålagt å
+          ha ansvarsforsikring nettopp for å beskytte kundene sine.
+        </p>
+
+        <h2>Etterutdanning og kvalitetssikring</h2>
+        <p>
+          Autoriserte regnskapsførere må gjennomføre minimum 77 timer etterutdanning over
+          en treårsperiode. Av dette må minst 21 timer være innen skatt og avgift, og
+          minst 21 timer innen finansregnskap. Resten kan fordeles på andre relevante
+          fagområder som selskapsrett, IT-sikkerhet eller bransjesspesifikk kompetanse.
+        </p>
+        <p>
+          Denne etterutdanningsplikten sikrer at regnskapsføreren din holder seg oppdatert
+          på regelverksendringer, ny teknologi og faglige nyvinninger. For deg som kunde
+          betyr det at du kan stole på at regnskapsføreren kjenner gjeldende regler og
+          kan gi oppdaterte råd.
+        </p>
+        <p>
+          <Link href="/regnskapsforer/">Se alle {firms.filter(f => f.naeringskode === '69.202').length} regnskapsførere i Oslo</Link> eller
+          <Link href="/hvordan-velge-regnskapsforer-oslo/"> les vår guide for valg av regnskapsfører</Link>.
         </p>
       </section>
 

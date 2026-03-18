@@ -47,22 +47,81 @@ export default function RegnskapsKontorPage() {
         </div>
       </div>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Hva er et regnskapskontor?</h2>
-        <p style={{ marginBottom: '1rem' }}>
+      <section style={{ marginTop: '2rem' }} className="prose">
+        <h2>Hva er et regnskapskontor?</h2>
+        <p>
           Et regnskapskontor er en virksomhet som tilbyr regnskapstjenester til andre bedrifter.
           Regnskapskontoret kan ha én eller flere ansatte regnskapsførere og tilbyr typisk en
-          bredde av tjenester innen økonomi og regnskap.
+          bredde av tjenester innen økonomi og regnskap. I Oslo varierer regnskapskontorene
+          fra enkeltpersonforetak med én regnskapsfører til store byråer med hundrevis av ansatte.
         </p>
-        <p style={{ marginBottom: '1rem' }}>
+        <p>
           Mange regnskapskontor i Oslo spesialiserer seg på bestemte bransjer eller bedriftsstørrelser.
           Noen fokuserer på enkeltpersonforetak og små AS, mens andre betjener mellomstore og store
-          selskaper med mer komplekse behov.
+          selskaper med mer komplekse behov. Denne spesialiseringen gjør at du kan finne et kontor
+          som kjenner akkurat din bransje og dine utfordringer.
         </p>
-        <p style={{ marginBottom: '1rem' }}>
+        <p>
           Typiske tjenester fra et regnskapskontor i Oslo inkluderer løpende bokføring, fakturering,
           lønnskjøring, MVA-rapportering, årsoppgjør, skattemelding, budsjettering og økonomisk
           rådgivning. Noen tilbyr også revisjon, juridisk rådgivning og bistand ved oppstart av selskap.
+        </p>
+
+        <h2>Tjenester et regnskapskontor i Oslo tilbyr</h2>
+        <p>
+          <strong>Bokføring og bilagsbehandling:</strong> Grunnsteinen i ethvert regnskapsoppdrag.
+          Regnskapskontoret registrerer alle økonomiske transaksjoner — inntekter, utgifter, kjøp
+          og salg — i henhold til bokføringsloven. Med moderne skybaserte systemer skjer mye av
+          bilagsbehandlingen digitalt, der fakturaer og kvitteringer skannes og bokføres automatisk.
+        </p>
+        <p>
+          <strong>Lønn og personaladministrasjon:</strong> For bedrifter med ansatte er lønnskjøring
+          en av de mest krevende oppgavene. Regnskapskontoret beregner lønn, skattetrekk, feriepenger,
+          sykepenger og arbeidsgiveravgift, og rapporterer a-meldingen til myndighetene hver måned.
+          Mange kontorer hjelper også med arbeidsavtaler, personalregistre og OTP-administrasjon.
+        </p>
+        <p>
+          <strong>MVA og avgiftsrapportering:</strong> MVA-registrerte virksomheter må levere
+          MVA-melding annenhver måned. Regnskapskontoret sørger for korrekt beregning av inngående
+          og utgående merverdiavgift, håndterer spesielle MVA-regler for ulike bransjer, og
+          leverer meldingen innen fristen.
+        </p>
+        <p>
+          <strong>Årsoppgjør og skattemelding:</strong> Ved årets slutt utarbeider regnskapskontoret
+          årsregnskap med resultatregnskap, balanse og noter for aksjeselskaper, samt skattemelding
+          og næringsoppgave for alle selskapsformer. Dette er den mest komplekse delen av
+          regnskapsarbeidet og krever grundig gjennomgang av hele årets bokføring.
+        </p>
+        <p>
+          <strong>Økonomisk rådgivning:</strong> Stadig flere regnskapskontor i Oslo tilbyr
+          rådgivningstjenester utover det rent regnskapsfaglige. Dette kan inkludere budsjettering
+          og likviditetsstyring, lønnsomhetsanalyser, rådgivning om selskapsstruktur og skatt,
+          bistand ved finansiering og banksøknader, og controller-tjenester der kontoret
+          fungerer som en ekstern økonomiavdeling.
+        </p>
+
+        <h2>Stort vs. lite regnskapskontor</h2>
+        <p>
+          I Oslo finnes det regnskapskontor i alle størrelser. Store byråer som BDO, KPMG og
+          Deloitte har hundrevis av ansatte og tilbyr spisskompetanse innen internasjonale
+          skatteregler, konsernregnskap og kompleks rapportering. De passer best for større
+          selskaper med avanserte behov.
+        </p>
+        <p>
+          Mellomstore kontorer med 5–30 ansatte tilbyr ofte en god balanse mellom bred
+          kompetanse og personlig oppfølging. De har gjerne spesialisering innen utvalgte
+          bransjer og kan håndtere de fleste regnskapsbehov effektivt.
+        </p>
+        <p>
+          Små kontorer med 1–5 ansatte gir typisk den tetteste personlige oppfølgingen.
+          Du snakker direkte med regnskapsføreren din uten mellomledd. Ulempen kan være
+          sårbarhet ved sykdom eller ferie, og begrenset bredde i kompetansen.
+        </p>
+        <p>
+          Valget mellom stort og lite avhenger av dine prioriteringer. Trenger du en
+          regnskapsfører som kjenner deg og bedriften din inn og ut? Da kan et lite kontor
+          passe. Trenger du tilgang til spesialister innen internasjonal skatt eller
+          transaksjonsrådgivning? Da bør du vurdere et større byrå.
         </p>
       </section>
 
