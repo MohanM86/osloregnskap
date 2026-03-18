@@ -203,3 +203,32 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
   .bar-label { width: 80px; font-size: 0.75rem; }
 }
+
+/* Colored stat cards */
+.stat-card-green { background: #F0FDF9; border: 1px solid #D1FAE5; }
+.stat-card-green .stat-num { color: #059669; }
+.stat-card-green::after { background: #00C48C; }
+
+.stat-card-blue { background: #EFF6FF; border: 1px solid #DBEAFE; }
+.stat-card-blue .stat-num { color: #2563EB; }
+.stat-card-blue::after { background: #3B82F6; }
+
+.stat-card-navy { background: #F0F3F9; border: 1px solid #D6DFF0; }
+.stat-card-navy .stat-num { color: #1B2A4A; }
+.stat-card-navy::after { background: #1B2A4A; }
+
+/* Colored firm badges */
+.badge-green { display: inline-block; font-size: 0.72rem; padding: 0.2rem 0.6rem; background: #ECFDF5; color: #047857; border-radius: 20px; font-weight: 500; }
+.badge-blue { display: inline-block; font-size: 0.72rem; padding: 0.2rem 0.6rem; background: #EFF6FF; color: #1D4ED8; border-radius: 20px; font-weight: 500; }
+.badge-amber { display: inline-block; font-size: 0.72rem; padding: 0.2rem 0.6rem; background: #FFFBEB; color: #B45309; border-radius: 20px; font-weight: 500; }
+
+/* Firm card with green accent on hover */
+.firm-card:hover { border-color: var(--accent-warm); box-shadow: 0 0 0 1px var(--accent-warm), 0 4px 12px rgba(0,196,140,0.12); transform: translateY(-2px); }
+
+/* Section divider */
+.section-divider { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+
+/* Prose with green accents for links */
+.prose a { color: var(--accent-warm); font-weight: 500; }
+.prose a:hover { text-decoration: underline; }
+

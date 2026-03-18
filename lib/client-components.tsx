@@ -26,7 +26,7 @@ export function FAQAccordion({ items }: { items: { q: string; a: string }[] }) {
 }
 
 /* ─── Animated Counter ─── */
-export function AnimatedStat({ value, label }: { value: number; label: string }) {
+export function AnimatedStat({ value, label, colorClass }: { value: number; label: string; colorClass?: string }) {
   const [displayed, setDisplayed] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -51,7 +51,7 @@ export function AnimatedStat({ value, label }: { value: number; label: string })
   }, [value]);
 
   return (
-    <div ref={ref} className="stat-card">
+    <div ref={ref} className={`stat-card ${colorClass || ''}`}>
       <span className="stat-num">{displayed}</span>
       <span className="stat-label">{label}</span>
     </div>
