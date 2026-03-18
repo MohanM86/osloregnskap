@@ -112,6 +112,67 @@ export default function HvordanVelgePage() {
         </p>
       </section>
 
+      <section style={{ marginTop: '2rem' }} className="prose">
+        <h2>Vanlige feil når du velger regnskapsfører</h2>
+        <p>
+          Mange bedriftseiere gjør feil som koster dem dyrt over tid. Den vanligste feilen
+          er å velge utelukkende på pris. Den billigste regnskapsføreren er sjelden den
+          beste — lav pris kan bety at regnskapsføreren har for mange kunder, bruker for
+          lite tid på hvert oppdrag, eller mangler erfaring med din bransje. Konsekvensen
+          kan være feil i regnskapet som fører til tilleggsskatt eller tapte fradragsmuligheter
+          som langt overstiger besparelsen på regnskapshonoraret.
+        </p>
+        <p>
+          En annen vanlig feil er å ikke sjekke autorisasjonen. Det er dessverre tilfeller
+          der personer tilbyr regnskapstjenester uten gyldig autorisasjon. Bruk Finanstilsynets
+          register for å verifisere at regnskapsføreren har gyldig godkjenning.
+        </p>
+        <p>
+          Mange glemmer også å avklare forventninger skriftlig. En god oppdragsavtale bør
+          spesifisere hvilke tjenester som er inkludert, frister for levering av bilag,
+          responstid, pris og betalingsvilkår, samt ansvarsfordeling mellom deg og
+          regnskapsføreren.
+        </p>
+
+        <h2>Når bør du vurdere å bytte regnskapsfører?</h2>
+        <p>
+          Det er flere varselsignaler som tyder på at du bør vurdere å bytte
+          regnskapsfører. Dersom du opplever at frister ikke overholdes, at det
+          oppstår gjentatte feil i regnskapet, at regnskapsføreren er vanskelig å
+          få tak i, eller at du ikke får den rådgivningen du trenger, er det
+          på tide å se seg om etter alternativer.
+        </p>
+        <p>
+          Andre grunner til å bytte kan være at bedriften din har vokst forbi
+          det nåværende regnskapskontorets kapasitet, at du har endret bransje
+          eller selskapsstruktur, eller at du har funnet en regnskapsfører som
+          tilbyr bedre verdi for pengene.
+        </p>
+        <p>
+          Å bytte regnskapsfører er enklere enn mange tror. Den nye regnskapsføreren
+          vil håndtere det meste av overgangsarbeidet, inkludert innhenting av
+          dokumentasjon og oppsett i nytt system. Det vanligste er å bytte ved
+          årsskiftet, men det er ingen krav om dette — du kan bytte når som helst
+          på året.
+        </p>
+
+        <h2>Sjekkliste: Før du signerer avtale</h2>
+        <p>
+          Før du inngår avtale med en regnskapsfører i Oslo, gå gjennom denne sjekklisten:
+          Verifiser autorisasjon hos Finanstilsynet. Be om referanser fra kunder i
+          lignende bransje og størrelse. Sammenlign minst tre tilbud med identisk
+          tjenestespesifikasjon. Sjekk hva som er inkludert og hva som faktureres
+          ekstra — spesielt årsoppgjør. Avklar hvilke regnskapssystemer som brukes
+          og om du får tilgang. Spør om responstid og tilgjengelighet. Avklar
+          hva som skjer dersom din faste regnskapsfører er syk eller slutter.
+          Les oppdragsavtalen nøye og forstå ansvarsfordelingen.
+        </p>
+        <p>
+          <Link href="/hva-koster-regnskapsforer-oslo/">Les mer om typiske priser</Link> og
+          hva som påvirker kostnaden for regnskapsfører i Oslo.
+        </p>
+      </section>
+
       <section style={{ marginTop: '2rem' }}>
         <p>Se vår <Link href="/firmaer/">komplette oversikt over {firms.length} regnskapsfirmaer i Oslo</Link>.</p>
       </section>

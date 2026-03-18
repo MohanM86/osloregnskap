@@ -129,28 +129,90 @@ export default function HvaKosterPage() {
         </p>
       </section>
 
-      <section style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Slik sparer du penger på regnskap</h2>
-        <p style={{ marginBottom: '1rem' }}>
-          Du kan redusere regnskapskostnadene ved å holde orden i bilagene dine. Lever bilag
-          sortert og i tide, og bruk et digitalt system for å skanne og kategorisere bilag.
-        </p>
-        <p style={{ marginBottom: '1rem' }}>
-          Bruk et skybasert regnskapssystem som Tripletex, Fiken, Visma eller DNB Regnskap.
-          Mange regnskapsførere gir lavere pris når kunden bruker et system som er enkelt å
-          jobbe med.
+      <section style={{ marginTop: '2rem' }} className="prose">
+        <h2>Priseksempler for regnskapsfører i Oslo</h2>
+        <p>
+          For å gi et mer konkret bilde av kostnaden, her er noen typiske scenarioer
+          for bedrifter i Oslo:
         </p>
         <p>
-          Be om fastpris fremfor timepris dersom du har et forutsigbart bilagsvolum. Fastpris
-          gir forutsigbarhet og kan ofte være billigere totalt sett.
+          <strong>Frilanser/konsulent (ENK):</strong> Du fakturerer 5–10 kunder per måned,
+          har 15–30 bilag, er MVA-registrert og har ingen ansatte. Forventet kostnad:
+          1 500–2 500 kr/mnd inkludert bokføring, MVA-oppgaver og årsoppgjør.
         </p>
-      </section>
+        <p>
+          <strong>Liten nettbutikk (AS):</strong> Du har 50–100 transaksjoner per måned,
+          1–2 ansatte og bruker et skybasert regnskapssystem. Forventet kostnad:
+          4 000–7 000 kr/mnd inkludert bokføring, lønn, MVA og årsoppgjør.
+        </p>
+        <p>
+          <strong>Konsulentselskap (AS):</strong> Du har 5–10 ansatte, 100–200 bilag
+          per måned og trenger løpende rapportering til ledelsen. Forventet kostnad:
+          8 000–15 000 kr/mnd inkludert alle tjenester pluss controller-støtte.
+        </p>
+        <p>
+          <strong>Restaurantdrift (AS):</strong> Du har 10+ ansatte, mange daglige
+          kontanttransaksjoner, tipshåndtering og komplekse lønnsberegninger.
+          Forventet kostnad: 12 000–20 000 kr/mnd på grunn av høyt bilagsvolum
+          og bransjekompleksitet.
+        </p>
 
-      <section style={{ marginTop: '2rem' }}>
+        <h2>Fastpris vs. timepris</h2>
         <p>
-          Oslo har <Link href="/firmaer/">{firms.length} registrerte regnskapsfirmaer</Link>.
-          Med så mange tilbydere har du gode muligheter for å finne en regnskapsfører som
-          passer ditt budsjett og behov.
+          De fleste regnskapsførere i Oslo tilbyr enten fastpris, timepris eller en
+          kombinasjon. Fastpris gir forutsigbarhet og er oftest billigst for bedrifter
+          med jevnt bilagsvolum. Du vet nøyaktig hva regnskapet koster per måned,
+          og regnskapsføreren har insentiv til å jobbe effektivt.
+        </p>
+        <p>
+          Timepris kan lønne seg for bedrifter med svært varierende behov — for eksempel
+          sesongbedrifter som har mye aktivitet noen måneder og lite andre. Ulempen er
+          at du ikke vet den endelige kostnaden på forhånd, og at det kan føles dyrt å
+          stille spørsmål når klokken tikker.
+        </p>
+        <p>
+          Noen regnskapsførere tilbyr en hybrid der grunnleggende tjenester er på fastpris,
+          mens rådgivning og ekstraarbeid faktureres per time. Dette kan gi god balanse
+          mellom forutsigbarhet og fleksibilitet.
+        </p>
+
+        <h2>Skjulte kostnader å passe på</h2>
+        <p>
+          Når du sammenligner tilbud fra regnskapsførere, vær oppmerksom på hva som faktisk
+          er inkludert. Noen vanlige tilleggskostnader som ikke alltid er med i grunntilbudet
+          inkluderer årsoppgjørstillegg (mange regnskapsførere fakturerer årsoppgjøret som en
+          separat post i tillegg til månedsprisen), oppstartskostnad ved bytte av regnskapsfører,
+          lisenskostnad for regnskapssystem, og ekstra timer for rådgivning utover rutinemessig
+          bokføring.
+        </p>
+        <p>
+          Be alltid om et komplett tilbud som spesifiserer alle kostnader over et helt år,
+          inkludert årsoppgjør og eventuelle systemkostnader. Da unngår du overraskelser.
+        </p>
+
+        <h2>Slik sparer du penger på regnskap</h2>
+        <p>
+          Du kan redusere regnskapskostnadene betydelig ved å holde orden i bilagene dine.
+          Lever bilag sortert og i tide, og bruk et digitalt system for å skanne og
+          kategorisere bilag. Jo mindre tid regnskapsføreren bruker på å sortere og
+          etterspørre dokumentasjon, jo lavere blir regningen din.
+        </p>
+        <p>
+          Bruk et skybasert regnskapssystem som Tripletex, Fiken, Visma eller PowerOffice.
+          Mange regnskapsførere gir lavere pris når kunden bruker et system som gjør
+          samarbeidet effektivt. Automatisk bankavstemmig og digital bilagsflyt kan
+          redusere antall timer regnskapsføreren bruker med 30–50 prosent.
+        </p>
+        <p>
+          Be om fastpris fremfor timepris dersom du har et forutsigbart bilagsvolum.
+          Fastpris gir forutsigbarhet og kan ofte være billigere totalt sett. Vurder
+          også å gjøre noe av arbeidet selv — for eksempel registrere bilag og sende
+          fakturaer — og la regnskapsføreren ta seg av rapportering og årsoppgjør.
+        </p>
+        <p>
+          Innhent tilbud fra minst tre regnskapsførere. Oslo har {firms.length} regnskapsfirmaer,
+          og konkurransen gjør at du har forhandlingsmakt. Mange tilbyr også rabatt
+          for lengre avtaleperioder.
         </p>
       </section>
 

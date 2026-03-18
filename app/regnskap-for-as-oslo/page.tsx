@@ -89,10 +89,84 @@ export default function RegnskapASPage() {
         </p>
       </section>
 
+      <section style={{ marginTop: '2rem' }} className="prose">
+        <h2>Starte AS i Oslo — regnskapskrav fra dag én</h2>
+        <p>
+          Når du stifter et aksjeselskap i Oslo, trer regnskapsplikten i kraft umiddelbart.
+          Fra dag én må alle økonomiske transaksjoner dokumenteres og bokføres. Mange
+          gründere undervurderer omfanget av regnskapskravene for AS og oppdager for sent
+          at de ligger etter med bokføringen.
+        </p>
+        <p>
+          Vår anbefaling er å engasjere regnskapsfører allerede før du stifter selskapet.
+          En erfaren regnskapsfører kan hjelpe deg med praktiske forhold som valg av
+          regnskapssystem, oppsett av kontoplan, registrering i MVA-registeret og
+          Arbeidsgiver- og arbeidstakerregisteret, samt etablering av gode rutiner
+          for bilagshåndtering fra starten.
+        </p>
+
+        <h2>Aksjeselskap uten ansatte — hva trenger du?</h2>
+        <p>
+          Mange aksjeselskaper i Oslo drives uten ansatte — typisk holdingselskaper,
+          konsulentselskaper der eieren tar utbytte fremfor lønn, eller investeringsselskaper.
+          Selv uten ansatte har du full regnskapsplikt med årsregnskap, skattemelding og
+          eventuelt MVA-rapportering.
+        </p>
+        <p>
+          For AS uten ansatte er det særlig viktig å ha kontroll på skillet mellom selskapets
+          og eierens private økonomi. Alle transaksjoner mellom selskapet og eieren må
+          dokumenteres korrekt — dette inkluderer lån fra selskapet, bruk av selskapets
+          eiendeler, og uttak av utbytte. Feil her kan føre til at Skatteetaten omklassifiserer
+          transaksjoner og ilegger tilleggsskatt.
+        </p>
+
+        <h2>AS med ansatte — utvidet regnskapsbehov</h2>
+        <p>
+          Når aksjeselskapet ditt har ansatte, øker regnskapsbehovet betydelig. I tillegg
+          til bokføring og MVA må du håndtere lønnsberegning med skattetrekk, feriepenger,
+          sykepenger og arbeidsgiveravgift. A-meldingen skal leveres til myndighetene
+          hver måned med komplett informasjon om alle ansattes lønn og trekk.
+        </p>
+        <p>
+          Arbeidsgiverplikter strekker seg utover det rent regnskapsmessige. Du må sørge
+          for yrkesskadeforsikring, obligatorisk tjenestepensjon (OTP) og korrekt
+          feriepengeberegning. En regnskapsfører med erfaring innen lønn og HR kan
+          hjelpe deg med å overholde alle kravene og unngå kostbare feil.
+        </p>
+
+        <h2>Skatteoptimalisering for AS i Oslo</h2>
+        <p>
+          En god regnskapsfører gjør mer enn å føre tall — de hjelper deg med å
+          optimalisere skattebelastningen innenfor lovens rammer. For aksjeselskaper
+          i Oslo er det flere lovlige strategier som kan redusere den samlede
+          skattebelastningen. Valget mellom lønn og utbytte til eier, riktig
+          bruk av skattemessige avskrivninger, fradragsføring av reelle driftskostnader,
+          og timing av investeringer i forhold til regnskapsåret er alle områder der
+          en kompetent regnskapsfører kan spare deg for betydelige beløp.
+        </p>
+        <p>
+          Det er viktig å understreke at skatteoptimalisering handler om å bruke lovens
+          muligheter riktig — ikke om å omgå reglene. En autorisert regnskapsfører vil
+          alltid operere innenfor lovens rammer og kan gi deg trygghet for at
+          skatteposisjonen din tåler et eventuelt bokettersyn.
+        </p>
+
+        <h2>Valg mellom lønn og utbytte</h2>
+        <p>
+          Et av de vanligste spørsmålene fra AS-eiere i Oslo handler om fordelingen
+          mellom lønn og utbytte. Lønn gir rett til sykepenger, dagpenger og
+          pensjonsopptjening, men belastes med arbeidsgiveravgift. Utbytte gir ikke
+          de samme trygderettighetene, men kan i noen tilfeller gi lavere samlet
+          skatt. Den optimale fordelingen avhenger av din personlige situasjon,
+          selskapets økonomi og dine trygdebehov. En regnskapsfører kan beregne
+          den mest gunstige fordelingen for akkurat din situasjon.
+        </p>
+      </section>
+
       <section style={{ marginTop: '2rem' }}>
         <p>
           Oslo har <Link href="/firmaer/">{firms.length} regnskapsfirmaer</Link> som kan hjelpe
-          ditt AS med regnskap og rapportering.
+          ditt AS. <Link href="/hvordan-velge-regnskapsforer-oslo/">Les vår guide for valg av regnskapsfører</Link>.
         </p>
       </section>
 
