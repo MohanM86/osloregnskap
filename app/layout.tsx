@@ -83,6 +83,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nb">
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K5BDKGPDH" />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2K5BDKGPDH');` }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavSchema) }} />
       </head>
