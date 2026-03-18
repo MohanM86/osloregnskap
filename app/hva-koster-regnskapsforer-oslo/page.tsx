@@ -21,14 +21,18 @@ export default function HvaKosterPage() {
         { label: 'Hjem', href: '/' },
         { label: 'Hva koster regnskapsfører i Oslo?' },
       ]} />
+      <section className="hero">
+      
 
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Hva koster regnskapsfører i Oslo?</h1>
+      <h1>Hva koster regnskapsfører i Oslo?</h1>
+      
 
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <p >
         Prisen for regnskapsfører i Oslo varierer basert på bedriftstype, antall transaksjoner,
         om du har ansatte og hvilke tjenester du trenger. Her gir vi deg en komplett oversikt
         over typiske priser og hva som påvirker kostnaden.
       </p>
+      </section>
 
       <section style={{ marginTop: '2rem' }}>
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Typiske priser for regnskapsfører i Oslo</h2>
@@ -38,12 +42,12 @@ export default function HvaKosterPage() {
         </p>
 
         <div style={{ border: '1px solid var(--border)', marginBottom: '1rem' }}>
-          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)' }}>
+          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--mint-light)' }}>
             <strong>Timepris</strong>
           </div>
           <div style={{ padding: '1rem' }}>
             <p>Typisk timepris for regnskapsfører i Oslo: <strong>500–1 500 kroner</strong> per time.</p>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            <p style={{ color: 'var(--fg-muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
               Timeprisen avhenger av kompetansenivå, firmaets størrelse og kompleksiteten i oppdraget.
               Nyutdannede regnskapsførere ligger i nedre sjikt, mens seniorrådgivere og spesialister
               tar høyere priser.
@@ -52,12 +56,12 @@ export default function HvaKosterPage() {
         </div>
 
         <div style={{ border: '1px solid var(--border)', marginBottom: '1rem' }}>
-          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)' }}>
+          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--mint-light)' }}>
             <strong>Enkeltpersonforetak (ENK)</strong>
           </div>
           <div style={{ padding: '1rem' }}>
             <p>Typisk månedspris: <strong>1 000–3 000 kroner</strong> per måned.</p>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            <p style={{ color: 'var(--fg-muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
               For enkeltpersonforetak med inntil 50 bilag per måned og ingen ansatte.
               Inkluderer vanligvis løpende bokføring, MVA-oppgaver og årsoppgjør.
             </p>
@@ -65,12 +69,12 @@ export default function HvaKosterPage() {
         </div>
 
         <div style={{ border: '1px solid var(--border)', marginBottom: '1rem' }}>
-          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)' }}>
+          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--mint-light)' }}>
             <strong>Aksjeselskap (AS) uten ansatte</strong>
           </div>
           <div style={{ padding: '1rem' }}>
             <p>Typisk månedspris: <strong>2 000–5 000 kroner</strong> per måned.</p>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            <p style={{ color: 'var(--fg-muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
               For AS med moderat aktivitet og ingen ansatte. Inkluderer bokføring, MVA,
               årsoppgjør og skattemelding. AS har flere rapporteringskrav enn ENK.
             </p>
@@ -78,12 +82,12 @@ export default function HvaKosterPage() {
         </div>
 
         <div style={{ border: '1px solid var(--border)', marginBottom: '1rem' }}>
-          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)' }}>
+          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--mint-light)' }}>
             <strong>AS med ansatte</strong>
           </div>
           <div style={{ padding: '1rem' }}>
             <p>Typisk månedspris: <strong>5 000–15 000 kroner</strong> per måned.</p>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            <p style={{ color: 'var(--fg-muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
               For AS med 1–10 ansatte. Inkluderer bokføring, lønnskjøring, a-melding,
               MVA, årsoppgjør og skattemelding. Prisen øker med antall ansatte og bilag.
             </p>
@@ -91,12 +95,12 @@ export default function HvaKosterPage() {
         </div>
 
         <div style={{ border: '1px solid var(--border)' }}>
-          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)' }}>
+          <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--mint-light)' }}>
             <strong>Større selskaper</strong>
           </div>
           <div style={{ padding: '1rem' }}>
             <p>Typisk månedspris: <strong>15 000–50 000+ kroner</strong> per måned.</p>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            <p style={{ color: 'var(--fg-muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
               For selskaper med mange ansatte, høyt bilagsvolum eller komplekse
               strukturer. Prisen settes individuelt basert på omfang og behov.
             </p>

@@ -23,14 +23,18 @@ export default function RegnskapsKontorPage() {
         { label: 'Hjem', href: '/' },
         { label: 'Regnskapskontor Oslo' },
       ]} />
+      <section className="hero">
+      
 
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Regnskapskontor Oslo</h1>
+      <h1>Regnskapskontor Oslo</h1>
+      
 
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <p >
         Oslo har {firms.length} registrerte regnskapskontor. Et regnskapskontor er et fysisk kontor
         der regnskapsførere og eventuelt andre fagpersoner jobber med regnskapstjenester for bedrifter.
         Her finner du oversikt over alle regnskapskontor i Oslo med adresser og bydelsinformasjon.
       </p>
+      </section>
 
       <div className="stat-grid">
         <div className="stat-box">
@@ -135,7 +139,7 @@ export default function RegnskapsKontorPage() {
               <Link key={b.slug} href={`/regnskapsforer-${info.urlSlug}/`}
                 style={{ display: 'flex', justifyContent: 'space-between', padding: '0.75rem 1rem', border: '1px solid var(--border)' }}>
                 <span>{b.name}</span>
-                <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{b.count}</span>
+                <span style={{ fontSize: '0.85rem', color: 'var(--fg-muted)' }}>{b.count}</span>
               </Link>
             );
           })}

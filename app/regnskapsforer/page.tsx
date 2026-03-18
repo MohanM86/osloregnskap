@@ -22,14 +22,18 @@ export default function RegnskapsforerPage() {
         { label: 'Hjem', href: '/' },
         { label: 'Regnskapsfører Oslo' },
       ]} />
+      <section className="hero">
+      
 
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Regnskapsfører Oslo</h1>
+      <h1>Regnskapsfører Oslo</h1>
+      
 
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <p >
         Det finnes {firms.length} registrerte regnskapsførere i Oslo. En regnskapsfører hjelper bedrifter
         med løpende bokføring, fakturering, lønnskjøring, MVA-rapportering og årsoppgjør. Her finner du
         komplett oversikt over alle regnskapsførere i Oslo, sortert etter bydel.
       </p>
+      </section>
 
       <div className="stat-grid">
         <div className="stat-box">
@@ -56,7 +60,7 @@ export default function RegnskapsforerPage() {
               <Link key={b.slug} href={`/regnskapsforer-${info.urlSlug}/`}
                 style={{ display: 'flex', justifyContent: 'space-between', padding: '0.75rem 1rem', border: '1px solid var(--border)' }}>
                 <span>Regnskapsfører {b.name}</span>
-                <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{b.count}</span>
+                <span style={{ fontSize: '0.85rem', color: 'var(--fg-muted)' }}>{b.count}</span>
               </Link>
             );
           })}

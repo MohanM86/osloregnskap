@@ -17,12 +17,16 @@ export default function RegnskapASPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', name: 'Regnskap for AS i Oslo', url: 'https://osloregnskap.no/regnskap-for-as-oslo/', author: { '@type': 'Organization', name: 'OsloRegnskap.no' } }) }} />
 
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Regnskap for AS i Oslo' }]} />
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Regnskap for AS i Oslo</h1>
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <section className="hero">
+      
+      <h1>Regnskap for AS i Oslo</h1>
+      
+      <p >
         Aksjeselskap (AS) har strengere regnskapskrav enn enkeltpersonforetak. Som AS i Oslo
         har du full regnskapsplikt, og det anbefales sterkt å bruke autorisert regnskapsfører.
         Her finner du alt om krav, kostnader og valg av regnskapsfører for AS.
       </p>
+      </section>
 
       <section style={{ marginTop: '2rem' }}>
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Regnskapsplikt for aksjeselskap</h2>

@@ -18,10 +18,14 @@ export default function RegnskapskontorerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Regnskapskontor Oslo', url: 'https://osloregnskap.no/regnskapskontor/', isPartOf: { '@type': 'WebSite', name: 'OsloRegnskap.no' } }) }} />
 
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Regnskapskontorer i Oslo' }]} />
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Regnskapskontorer i Oslo</h1>
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <section className="hero">
+      
+      <h1>Regnskapskontorer i Oslo</h1>
+      
+      <p >
         Komplett oversikt over {firms.length} regnskapskontorer i Oslo fordelt på {bydeler.length} bydeler.
       </p>
+      </section>
 
       <section style={{ marginTop: '1rem' }}>
         <h2 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>Per bydel</h2>
@@ -33,7 +37,7 @@ export default function RegnskapskontorerPage() {
               <Link key={b.slug} href={`/regnskapsforer-${info.urlSlug}/`}
                 style={{ display: 'flex', justifyContent: 'space-between', padding: '0.75rem 1rem', border: '1px solid var(--border)' }}>
                 <span>{b.name}</span>
-                <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{b.count}</span>
+                <span style={{ fontSize: '0.85rem', color: 'var(--fg-muted)' }}>{b.count}</span>
               </Link>
             );
           })}

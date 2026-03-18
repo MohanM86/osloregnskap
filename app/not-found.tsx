@@ -4,7 +4,7 @@ import { BYDELER_INFO } from '@/lib/data';
 export default function NotFound() {
   return (
     <div className="container" style={{ textAlign: 'center', padding: '4rem 1.5rem' }}>
-      <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem', color: 'var(--accent-warm)' }}>404</h1>
+      <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem', color: 'var(--green-mid)' }}>404</h1>
       <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Siden ble ikke funnet</h2>
       <p style={{ color: 'var(--fg-secondary)', marginBottom: '2rem', maxWidth: '500px', margin: '0 auto 2rem' }}>
         Beklager, vi finner ikke siden du leter etter. Den kan ha blitt flyttet eller fjernet.

@@ -22,14 +22,18 @@ export default function RegnskapsByraPage() {
         { label: 'Hjem', href: '/' },
         { label: 'Regnskapsbyrå Oslo' },
       ]} />
+      <section className="hero">
+      
 
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Regnskapsbyrå Oslo</h1>
+      <h1>Regnskapsbyrå Oslo</h1>
+      
 
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <p >
         Et regnskapsbyrå i Oslo tilbyr profesjonelle regnskapstjenester til bedrifter i alle størrelser.
         Oslo har {firms.length} registrerte regnskapsfirmaer, hvorav {mvaFirms.length} er MVA-registrerte.
         Her finner du komplett oversikt over regnskapsbyråer i Oslo.
       </p>
+      </section>
 
       <section style={{ marginTop: '2rem' }} className="prose">
         <h2>Hva tilbyr et regnskapsbyrå?</h2>
@@ -136,7 +140,7 @@ export default function RegnskapsByraPage() {
               <Link key={b.slug} href={`/regnskapsforer-${info.urlSlug}/`}
                 style={{ display: 'flex', justifyContent: 'space-between', padding: '0.75rem 1rem', border: '1px solid var(--border)' }}>
                 <span>{b.name}</span>
-                <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{b.count}</span>
+                <span style={{ fontSize: '0.85rem', color: 'var(--fg-muted)' }}>{b.count}</span>
               </Link>
             );
           })}

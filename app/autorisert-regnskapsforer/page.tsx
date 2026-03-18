@@ -21,14 +21,18 @@ export default function AutorisertPage() {
         { label: 'Hjem', href: '/' },
         { label: 'Autorisert regnskapsfører Oslo' },
       ]} />
+      <section className="hero">
+      
 
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Autorisert regnskapsfører Oslo</h1>
+      <h1>Autorisert regnskapsfører Oslo</h1>
+      
 
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <p >
         En autorisert regnskapsfører har godkjenning fra Finanstilsynet til å føre regnskap for
         andre virksomheter. I Oslo finnes det {firms.filter(f => f.naeringskode === '69.202').length} registrerte
         regnskapsfirmaer. Her forklarer vi hva autorisasjon innebærer og hvorfor det er viktig.
       </p>
+      </section>
 
       <section style={{ marginTop: '2rem' }}>
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Hva er en autorisert regnskapsfører?</h2>

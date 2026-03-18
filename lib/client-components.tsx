@@ -178,11 +178,11 @@ export function DonutChart({ data, title }: { data: { label: string; value: numb
       <div className="donut-container">
         <svg width="180" height="180" viewBox="0 0 180 180" style={{ opacity: visible ? 1 : 0, transition: 'opacity 0.6s ease 0.2s' }}>
           {segments.map((s, i) => (
-            <path key={i} d={s.path} fill={s.color} stroke="var(--bg-elevated)" strokeWidth="2">
+            <path key={i} d={s.path} fill={s.color} stroke="var(--mint-light)" strokeWidth="2">
               <title>{s.label}: {s.value} ({Math.round(s.percent * 100)}%)</title>
             </path>
           ))}
-          <circle cx="90" cy="90" r="40" fill="var(--bg-elevated)" />
+          <circle cx="90" cy="90" r="40" fill="var(--mint-light)" />
           <text x="90" y="86" textAnchor="middle" style={{ fontSize: '1.4rem', fontFamily: 'var(--font-display)', fill: 'var(--fg)' }}>{total}</text>
           <text x="90" y="102" textAnchor="middle" style={{ fontSize: '0.55rem', fill: 'var(--fg-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>TOTALT</text>
         </svg>

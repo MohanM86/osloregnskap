@@ -305,3 +305,18 @@ html, body { overflow-x: hidden; }
 /* Google-layout: bydel grid 3-col */
 .bydel-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.65rem; }
 @media (max-width: 768px) { .bydel-grid-3 { grid-template-columns: 1fr 1fr; } }
+
+/* Legacy stat classes — map to new design */
+.stat-grid { display: flex; gap: 2.5rem; margin: 1.5rem 0; padding: 1.25rem 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.stat-box { text-align: left; }
+.stat-box .num { font-family: var(--font); font-size: 1.75rem; font-weight: 700; color: var(--fg); display: block; line-height: 1; margin-bottom: 0.15rem; letter-spacing: -0.03em; }
+.stat-box .label { font-size: 0.7rem; color: var(--fg-muted); font-weight: 300; display: block; }
+@media (max-width: 768px) {
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stat-box .num { font-size: 1.4rem; }
+}
+
+/* Bydel links on sub-pages — standardize */
+.bydel-link-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; }
+.bydel-link-grid a { background: var(--mint-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--fg); transition: all var(--transition); }
+.bydel-link-grid a:hover { border-color: var(--green-mid); transform: translateY(-1px); text-decoration: none; }

@@ -17,12 +17,16 @@ export default function HjelpMedRegnskapPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', name: 'Hjelp med regnskap i Oslo', url: 'https://osloregnskap.no/hjelp-med-regnskap-oslo/', author: { '@type': 'Organization', name: 'OsloRegnskap.no' } }) }} />
 
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Hjelp med regnskap i Oslo' }]} />
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Hjelp med regnskap i Oslo</h1>
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <section className="hero">
+      
+      <h1>Hjelp med regnskap i Oslo</h1>
+      
+      <p >
         Trenger du hjelp med regnskapet? Oslo har {firms.length} registrerte regnskapsfirmaer
         som kan bistå med alt fra enkel bokføring til komplett økonomistyring. Her gir vi deg
         oversikt over mulighetene dine.
       </p>
+      </section>
 
       <section style={{ marginTop: '2rem' }}>
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Når trenger du hjelp med regnskap?</h2>
@@ -143,7 +147,7 @@ export default function HjelpMedRegnskapPage() {
               <Link key={b.slug} href={`/regnskapsforer-${info.urlSlug}/`}
                 style={{ padding: '0.75rem 1rem', border: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between' }}>
                 <span>{b.name}</span>
-                <span style={{ color: 'var(--muted)', fontSize: '0.85rem' }}>{b.count}</span>
+                <span style={{ color: 'var(--fg-muted)', fontSize: '0.85rem' }}>{b.count}</span>
               </Link>
             );
           })}

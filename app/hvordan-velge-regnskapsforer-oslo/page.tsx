@@ -18,13 +18,17 @@ export default function HvordanVelgePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', name: 'Hvordan velge regnskapsfører i Oslo', url: 'https://osloregnskap.no/hvordan-velge-regnskapsforer-oslo/', author: { '@type': 'Organization', name: 'OsloRegnskap.no' } }) }} />
 
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Hvordan velge regnskapsfører i Oslo' }]} />
+      <section className="hero">
+      
 
-      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Hvordan velge regnskapsfører i Oslo</h1>
+      <h1>Hvordan velge regnskapsfører i Oslo</h1>
+      
 
-      <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
+      <p >
         Med {firms.length} regnskapsfirmaer i Oslo kan det være vanskelig å velge riktig.
         Her er en komplett guide med de viktigste faktorene du bør vurdere.
       </p>
+      </section>
 
       <section style={{ marginTop: '2rem' }}>
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>1. Sjekk autorisasjon</h2>
