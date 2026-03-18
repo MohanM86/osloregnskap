@@ -132,18 +132,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Full firm catalog — all 386 in HTML, grouped by bydel */}
-      <section className="section-block">
-        <CompactCatalog
-          firms={firms}
-          bydeler={bydeler.map(b => ({
-            name: b.name,
-            slug: BYDELER_INFO[b.name]?.urlSlug || b.slug,
-            count: b.count,
-          }))}
-        />
-      </section>
-
       {/* Charts row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1rem', margin: '2rem 0' }} className="animate-in animate-in-4">
         <BarChart title="Regnskapsfirmaer per bydel" data={bydelChartData} />
