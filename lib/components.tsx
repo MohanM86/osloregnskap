@@ -8,7 +8,7 @@ export function Header() {
       <div className="container-wide">
         <div className="header-inner">
           <Link href="/" className="logo">
-            OsloRegnskap
+            OsloRegnskap.
           </Link>
           <nav className="nav-links desktop-nav">
             <Link href="/regnskapsforer/">Regnskapsfører</Link>
@@ -60,7 +60,7 @@ export function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} OsloRegnskap.no — Uavhengig informasjonsside om regnskapstjenester i Oslo</span>
+          <span>© {new Date().getFullYear()} OsloRegnskap..no — Uavhengig informasjonsside om regnskapstjenester i Oslo</span>
           <span>Offentlig registerdata</span>
         </div>
       </div>
