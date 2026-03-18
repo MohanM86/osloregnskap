@@ -1,5 +1,5 @@
 import { getAllFirms } from '@/lib/data';
-import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
@@ -14,6 +14,8 @@ export default function RegnskapENKPage() {
   const firms = getAllFirms();
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', name: 'Regnskap for enkeltpersonforetak i Oslo', url: 'https://osloregnskap.no/regnskap-for-enkeltpersonforetak-oslo/', author: { '@type': 'Organization', name: 'OsloRegnskap.no' } }) }} />
+
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Regnskap for ENK i Oslo' }]} />
       <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Regnskap for enkeltpersonforetak i Oslo</h1>
       <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
@@ -93,6 +95,12 @@ export default function RegnskapENKPage() {
         </p>
       </section>
 
+      <SchemaFAQ items={[
+        { q: 'Må enkeltpersonforetak føre regnskap?', a: 'Ja, alle enkeltpersonforetak har bokføringsplikt. Du må dokumentere alle økonomiske transaksjoner. ENK med omsetning under 50 000 kr kan bruke forenklet bokføring.' },
+        { q: 'Hva koster regnskapsfører for ENK i Oslo?', a: 'Typisk 1 000–3 000 kroner per måned for et enkeltpersonforetak med moderat aktivitet. Prisen avhenger av antall bilag og om du er MVA-registrert.' },
+        { q: 'Kan jeg føre regnskapet selv som ENK?', a: 'Ja, mange enkeltpersonforetak fører regnskapet selv. Bruk et godkjent regnskapsprogram som Fiken, Visma eller Tripletex. Vurder regnskapsfører hvis du har høy omsetning eller komplekse forhold.' },
+        { q: 'Når må ENK levere skattemelding?', a: 'Skattemeldingen med næringsoppgave har frist 31. mai for enkeltpersonforetak. MVA-meldinger leveres annenhver måned.' },
+      ]} />
       <FAQAccordion items={[
         { q: 'Må enkeltpersonforetak føre regnskap?', a: 'Ja, alle enkeltpersonforetak har bokføringsplikt. Du må dokumentere alle økonomiske transaksjoner. ENK med omsetning under 50 000 kr kan bruke forenklet bokføring.' },
         { q: 'Hva koster regnskapsfører for ENK i Oslo?', a: 'Typisk 1 000–3 000 kroner per måned for et enkeltpersonforetak med moderat aktivitet. Prisen avhenger av antall bilag og om du er MVA-registrert.' },

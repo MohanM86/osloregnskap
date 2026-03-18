@@ -15,6 +15,8 @@ export default function RegnskapskontorerPage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Regnskapskontor Oslo', url: 'https://osloregnskap.no/regnskapskontor/', isPartOf: { '@type': 'WebSite', name: 'OsloRegnskap.no' } }) }} />
+
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Regnskapskontorer i Oslo' }]} />
       <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Regnskapskontorer i Oslo</h1>
       <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>

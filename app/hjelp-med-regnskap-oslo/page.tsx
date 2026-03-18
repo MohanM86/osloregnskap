@@ -1,5 +1,5 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
@@ -14,6 +14,8 @@ export default function HjelpMedRegnskapPage() {
   const firms = getAllFirms();
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', name: 'Hjelp med regnskap i Oslo', url: 'https://osloregnskap.no/hjelp-med-regnskap-oslo/', author: { '@type': 'Organization', name: 'OsloRegnskap.no' } }) }} />
+
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Hjelp med regnskap i Oslo' }]} />
       <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Hjelp med regnskap i Oslo</h1>
       <p style={{ fontSize: '1.05rem', color: 'var(--muted)', marginBottom: '1.5rem' }}>
@@ -89,6 +91,12 @@ export default function HjelpMedRegnskapPage() {
         </div>
       </section>
 
+      <SchemaFAQ items={[
+        { q: 'Trenger jeg regnskapsfører?', a: 'Du er ikke pålagt å bruke regnskapsfører, men alle næringsdrivende har bokføringsplikt. For AS anbefales det sterkt å bruke autorisert regnskapsfører. ENK med lav omsetning kan vurdere å føre regnskapet selv.' },
+        { q: 'Kan jeg føre regnskapet selv?', a: 'Ja, det finnes brukervennlige regnskapsprogrammer som Fiken, Tripletex og Visma. For enkle forhold med få transaksjoner kan du fint føre regnskapet selv. Ved større omsetning eller komplekse forhold anbefales regnskapsfører.' },
+        { q: 'Hva koster det å få hjelp med regnskap i Oslo?', a: 'Regnskapsfører i Oslo koster typisk 1 000–15 000 kr/mnd avhengig av bedriftstype og omfang. Regnskapsprogrammer koster fra 0–500 kr/mnd for grunnleggende versjoner.' },
+        { q: 'Hva gjør jeg hvis regnskapet er rot?', a: 'Kontakt en regnskapsfører som kan hjelpe deg med å rydde opp. Mange regnskapsførere tilbyr oppryddingstjenester der de går gjennom og korrigerer tidligere bokføring.' },
+      ]} />
       <FAQAccordion items={[
         { q: 'Trenger jeg regnskapsfører?', a: 'Du er ikke pålagt å bruke regnskapsfører, men alle næringsdrivende har bokføringsplikt. For AS anbefales det sterkt å bruke autorisert regnskapsfører. ENK med lav omsetning kan vurdere å føre regnskapet selv.' },
         { q: 'Kan jeg føre regnskapet selv?', a: 'Ja, det finnes brukervennlige regnskapsprogrammer som Fiken, Tripletex og Visma. For enkle forhold med få transaksjoner kan du fint føre regnskapet selv. Ved større omsetning eller komplekse forhold anbefales regnskapsfører.' },

@@ -1,5 +1,5 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
@@ -17,6 +17,8 @@ export default function RegnskapsKontorPage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Regnskapskontor Oslo', url: 'https://osloregnskap.no/regnskapskontor/', isPartOf: { '@type': 'WebSite', name: 'OsloRegnskap.no' } }) }} />
+
       <Breadcrumb items={[
         { label: 'Hjem', href: '/' },
         { label: 'Regnskapskontor Oslo' },
@@ -121,6 +123,12 @@ export default function RegnskapsKontorPage() {
         </p>
       </section>
 
+      <SchemaFAQ items={[
+        { q: 'Hvor mange regnskapskontor er det i Oslo?', a: `Det er ${firms.length} registrerte regnskapskontor i Oslo ifølge Brønnøysundregistrene.` },
+        { q: 'Hva er forskjellen på regnskapskontor og regnskapsbyrå?', a: 'I praksis brukes begrepene regnskapskontor og regnskapsbyrå om hverandre. Et regnskapsbyrå er gjerne et litt større kontor med flere ansatte og bredere tjenestetilbud, men det finnes ingen formell forskjell.' },
+        { q: 'Hvordan finner jeg regnskapskontor nær meg i Oslo?', a: 'Du kan finne regnskapskontor i din bydel ved å bruke vår bydelsoversikt. Vi har listet alle regnskapskontor per bydel i Oslo, basert på registrert forretningsadresse.' },
+        { q: 'Kan jeg bruke regnskapskontor utenfor Oslo?', a: 'Ja, det er ingenting i veien for å bruke et regnskapskontor utenfor Oslo. Med moderne skybaserte regnskapssystemer kan regnskapsføreren jobbe fra hvor som helst. Mange velger likevel et lokalt kontor for enklere kommunikasjon og møter.' },
+      ]} />
       <FAQAccordion items={[
         { q: 'Hvor mange regnskapskontor er det i Oslo?', a: `Det er ${firms.length} registrerte regnskapskontor i Oslo ifølge Brønnøysundregistrene.` },
         { q: 'Hva er forskjellen på regnskapskontor og regnskapsbyrå?', a: 'I praksis brukes begrepene regnskapskontor og regnskapsbyrå om hverandre. Et regnskapsbyrå er gjerne et litt større kontor med flere ansatte og bredere tjenestetilbud, men det finnes ingen formell forskjell.' },

@@ -1,5 +1,5 @@
 import { getAllFirms } from '@/lib/data';
-import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
@@ -15,6 +15,8 @@ export default function HvordanVelgePage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', name: 'Hvordan velge regnskapsfører i Oslo', url: 'https://osloregnskap.no/hvordan-velge-regnskapsforer-oslo/', author: { '@type': 'Organization', name: 'OsloRegnskap.no' } }) }} />
+
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Hvordan velge regnskapsfører i Oslo' }]} />
 
       <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Hvordan velge regnskapsfører i Oslo</h1>
@@ -114,6 +116,12 @@ export default function HvordanVelgePage() {
         <p>Se vår <Link href="/firmaer/">komplette oversikt over {firms.length} regnskapsfirmaer i Oslo</Link>.</p>
       </section>
 
+      <SchemaFAQ items={[
+        { q: 'Hva er det viktigste å se etter hos en regnskapsfører?', a: 'Det viktigste er at regnskapsføreren er autorisert, har erfaring med din bransje, bruker moderne systemer og er tilgjengelig for spørsmål. Pris er viktig, men bør ikke være det eneste kriteriet.' },
+        { q: 'Bør jeg velge en stor eller liten regnskapsfører?', a: 'Det avhenger av dine behov. Små regnskapsførere gir ofte tettere oppfølging og lavere pris, mens større byråer kan tilby bredere kompetanse og bedre kapasitet.' },
+        { q: 'Hvordan bytter jeg regnskapsfører?', a: 'Si opp avtalen med eksisterende regnskapsfører med avtalt oppsigelsestid. Den nye regnskapsføreren vil bistå med å innhente dokumentasjon og sørge for en smidig overgang.' },
+        { q: 'Hvor mange tilbud bør jeg innhente?', a: 'Vi anbefaler å innhente tilbud fra minst 3 regnskapsførere for å få et godt sammenligningsgrunnlag. Sørg for at tilbudene dekker de samme tjenestene.' },
+      ]} />
       <FAQAccordion items={[
         { q: 'Hva er det viktigste å se etter hos en regnskapsfører?', a: 'Det viktigste er at regnskapsføreren er autorisert, har erfaring med din bransje, bruker moderne systemer og er tilgjengelig for spørsmål. Pris er viktig, men bør ikke være det eneste kriteriet.' },
         { q: 'Bør jeg velge en stor eller liten regnskapsfører?', a: 'Det avhenger av dine behov. Små regnskapsførere gir ofte tettere oppfølging og lavere pris, mens større byråer kan tilby bredere kompetanse og bedre kapasitet.' },

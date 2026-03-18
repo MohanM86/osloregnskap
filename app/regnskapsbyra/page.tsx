@@ -1,5 +1,5 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
@@ -16,6 +16,8 @@ export default function RegnskapsByraPage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Regnskapsbyrå Oslo', url: 'https://osloregnskap.no/regnskapsbyra/', isPartOf: { '@type': 'WebSite', name: 'OsloRegnskap.no' } }) }} />
+
       <Breadcrumb items={[
         { label: 'Hjem', href: '/' },
         { label: 'Regnskapsbyrå Oslo' },
@@ -103,6 +105,12 @@ export default function RegnskapsByraPage() {
         </p>
       </section>
 
+      <SchemaFAQ items={[
+        { q: 'Hva er et regnskapsbyrå?', a: 'Et regnskapsbyrå er en virksomhet som tilbyr regnskapstjenester til andre bedrifter. Tjenestene inkluderer typisk bokføring, lønnskjøring, MVA-rapportering og årsoppgjør.' },
+        { q: 'Hvor mye koster et regnskapsbyrå i Oslo?', a: 'Prisen varierer basert på tjenester og omfang. For enkeltpersonforetak koster det typisk 1 000–3 000 kroner per måned, mens AS med ansatte betaler 5 000–15 000 kroner per måned.' },
+        { q: 'Trenger jeg et lokalt regnskapsbyrå i Oslo?', a: 'Ikke nødvendigvis. Med skybaserte regnskapssystemer kan et regnskapsbyrå jobbe for deg uansett beliggenhet. Mange foretrekker likevel et lokalt byrå for enklere kommunikasjon.' },
+        { q: 'Hvordan bytter jeg regnskapsbyrå?', a: 'Du kan bytte regnskapsbyrå når som helst. Si opp avtalen med eksisterende byrå, og det nye byrået vil normalt bistå med å innhente dokumentasjon og sørge for en smidig overgang.' },
+      ]} />
       <FAQAccordion items={[
         { q: 'Hva er et regnskapsbyrå?', a: 'Et regnskapsbyrå er en virksomhet som tilbyr regnskapstjenester til andre bedrifter. Tjenestene inkluderer typisk bokføring, lønnskjøring, MVA-rapportering og årsoppgjør.' },
         { q: 'Hvor mye koster et regnskapsbyrå i Oslo?', a: 'Prisen varierer basert på tjenester og omfang. For enkeltpersonforetak koster det typisk 1 000–3 000 kroner per måned, mens AS med ansatte betaler 5 000–15 000 kroner per måned.' },

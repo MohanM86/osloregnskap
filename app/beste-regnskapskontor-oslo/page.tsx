@@ -1,5 +1,5 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
@@ -16,6 +16,8 @@ export default function BesteRegnskapsKontorPage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Regnskapskontor Oslo', url: 'https://osloregnskap.no/regnskapskontor/', isPartOf: { '@type': 'WebSite', name: 'OsloRegnskap.no' } }) }} />
+
       <Breadcrumb items={[{ label: 'Hjem', href: '/' }, { label: 'Beste regnskapskontor Oslo' }]} />
 
       <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Beste regnskapskontor i Oslo</h1>
@@ -110,6 +112,12 @@ export default function BesteRegnskapsKontorPage() {
         </p>
       </section>
 
+      <SchemaFAQ items={[
+        { q: 'Hvilket regnskapskontor i Oslo er best?', a: `Det beste regnskapskontoret avhenger av dine behov. Oslo har ${firms.length} registrerte regnskapsfirmaer. Vurder bransjeerfaring, pris, beliggenhet og tilgjengelighet for å finne det rette kontoret for din bedrift.` },
+        { q: 'Hvor finner jeg regnskapskontor nær meg i Oslo?', a: 'Bruk vår bydelsoversikt for å finne regnskapskontor i din bydel. Vi har listet alle registrerte regnskapsfirmaer per bydel med adresse og kontaktinfo.' },
+        { q: 'Skal jeg velge et stort eller lite regnskapskontor?', a: 'Store kontorer tilbyr bredere kompetanse og mer kapasitet, mens mindre kontorer ofte gir tettere personlig oppfølging og lavere pris. Velg basert på dine konkrete behov.' },
+        { q: 'Kan jeg stole på anmeldelser av regnskapskontor på nett?', a: 'Anmeldelser kan gi nyttig innsikt, men bør tas med en klype salt. Be heller om referanser direkte fra regnskapskontoret og kontakt eksisterende kunder.' },
+      ]} />
       <FAQAccordion items={[
         { q: 'Hvilket regnskapskontor i Oslo er best?', a: `Det beste regnskapskontoret avhenger av dine behov. Oslo har ${firms.length} registrerte regnskapsfirmaer. Vurder bransjeerfaring, pris, beliggenhet og tilgjengelighet for å finne det rette kontoret for din bedrift.` },
         { q: 'Hvor finner jeg regnskapskontor nær meg i Oslo?', a: 'Bruk vår bydelsoversikt for å finne regnskapskontor i din bydel. Vi har listet alle registrerte regnskapsfirmaer per bydel med adresse og kontaktinfo.' },

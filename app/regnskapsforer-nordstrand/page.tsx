@@ -1,5 +1,5 @@
 import { getAllFirms, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
@@ -19,6 +19,16 @@ export default function RegnskapsforerNordstrandPage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Regnskapsfører Nordstrand Oslo',
+    description: `Oversikt over regnskapsførere i Nordstrand, Oslo`,
+    url: 'https://osloregnskap.no/regnskapsforer-nordstrand/',
+    isPartOf: { '@type': 'WebSite', name: 'OsloRegnskap.no', url: 'https://osloregnskap.no' },
+    about: { '@type': 'City', name: 'Oslo' },
+  }) }} />
+
       <Breadcrumb items={[
         { label: 'Hjem', href: '/' },
         { label: 'Regnskapsfører Oslo', href: '/regnskapsforer/' },
@@ -97,6 +107,11 @@ export default function RegnskapsforerNordstrandPage() {
         </div>
       </section>
 
+      <SchemaFAQ items={[
+        { q: 'Hvor mange regnskapsfirmaer er det i Nordstrand?', a: `Det er ${firms.length} registrerte regnskapsfirmaer i Nordstrand ifølge Brønnøysundregistrene.` },
+        { q: 'Må jeg bruke regnskapsfører i Nordstrand?', a: 'Nei, du trenger ikke bruke en regnskapsfører i din egen bydel. Med moderne skybaserte løsninger kan regnskapsføreren jobbe fra hvor som helst. Mange foretrekker likevel en lokal regnskapsfører for enklere kommunikasjon.' },
+        { q: 'Hva koster regnskapsfører i Nordstrand?', a: 'Prisene er omtrent de samme som ellers i Oslo. Typisk 500–1 500 kroner per time, eller 1 000–15 000 kroner per måned avhengig av bedriftsstørrelse og behov.' },
+      ]} />
       <FAQAccordion items={[
         { q: 'Hvor mange regnskapsfirmaer er det i Nordstrand?', a: `Det er ${firms.length} registrerte regnskapsfirmaer i Nordstrand ifølge Brønnøysundregistrene.` },
         { q: 'Må jeg bruke regnskapsfører i Nordstrand?', a: 'Nei, du trenger ikke bruke en regnskapsfører i din egen bydel. Med moderne skybaserte løsninger kan regnskapsføreren jobbe fra hvor som helst. Mange foretrekker likevel en lokal regnskapsfører for enklere kommunikasjon.' },

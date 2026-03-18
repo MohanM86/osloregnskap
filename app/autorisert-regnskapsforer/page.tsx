@@ -1,5 +1,5 @@
 import { getAllFirms } from '@/lib/data';
-import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
@@ -15,6 +15,8 @@ export default function AutorisertPage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Regnskapsfører Oslo', url: 'https://osloregnskap.no/regnskapsforer/', isPartOf: { '@type': 'WebSite', name: 'OsloRegnskap.no' } }) }} />
+
       <Breadcrumb items={[
         { label: 'Hjem', href: '/' },
         { label: 'Autorisert regnskapsfører Oslo' },
@@ -109,6 +111,12 @@ export default function AutorisertPage() {
         </p>
       </section>
 
+      <SchemaFAQ items={[
+        { q: 'Er det lovpålagt å bruke autorisert regnskapsfører?', a: 'Det er lovpålagt at den som tilbyr regnskapstjenester til andre er autorisert. Du er ikke pålagt å bruke regnskapsfører, men dersom du velger å bruke en, må vedkommende være autorisert.' },
+        { q: 'Hva skjer hvis regnskapsføreren min mister autorisasjonen?', a: 'Dersom regnskapsføreren mister autorisasjonen, må vedkommende slutte å tilby regnskapstjenester. Du bør da finne en ny autorisert regnskapsfører. Finanstilsynet publiserer vedtak om tilbakekalt autorisasjon.' },
+        { q: 'Hvordan sjekker jeg om regnskapsføreren er autorisert?', a: 'Du kan sjekke autorisasjon i Finanstilsynets offentlige register over autoriserte regnskapsførere. Søk på navn eller organisasjonsnummer.' },
+        { q: 'Hva er forskjellen på autorisert regnskapsfører og statsautorisert revisor?', a: 'En autorisert regnskapsfører fører regnskapet, mens en statsautorisert revisor kontrollerer og attesterer regnskapet. Revisor har høyere utdanningskrav og en uavhengig kontrollfunksjon.' },
+      ]} />
       <FAQAccordion items={[
         { q: 'Er det lovpålagt å bruke autorisert regnskapsfører?', a: 'Det er lovpålagt at den som tilbyr regnskapstjenester til andre er autorisert. Du er ikke pålagt å bruke regnskapsfører, men dersom du velger å bruke en, må vedkommende være autorisert.' },
         { q: 'Hva skjer hvis regnskapsføreren min mister autorisasjonen?', a: 'Dersom regnskapsføreren mister autorisasjonen, må vedkommende slutte å tilby regnskapstjenester. Du bør da finne en ny autorisert regnskapsfører. Finanstilsynet publiserer vedtak om tilbakekalt autorisasjon.' },
