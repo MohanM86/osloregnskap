@@ -40,8 +40,8 @@ export default function HomePage() {
 
   // Donut data
   const donutData = [
-    { label: 'Regnskapsføring', value: regnskapForere.length, color: '#00C48C' },
-    { label: 'Revisjon', value: revisorer.length, color: '#00D9A0' },
+    { label: 'Regnskapsføring', value: regnskapForere.length, color: '#111111' },
+    { label: 'Revisjon', value: revisorer.length, color: '#555555' },
     { label: 'Annet', value: firms.length - regnskapForere.length - revisorer.length, color: '#e8e5e1' },
   ];
 
@@ -148,7 +148,7 @@ export default function HomePage() {
           ].map(item => (
             <Link key={item.href} href={item.href} className="card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', textDecoration: 'none' }}>
               <span>{item.label}</span>
-              <span style={{ color: 'var(--accent-warm)' }}>→</span>
+              <span style={{ color: 'var(--fg-muted)' }}>→</span>
             </Link>
           ))}
         </div>
