@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { BYDELER_INFO } from '@/lib/data';
+import { MobileMenu } from '@/lib/mobile-menu';
 
 export function Header() {
   return (
@@ -7,14 +8,15 @@ export function Header() {
       <div className="container-wide">
         <div className="header-inner">
           <Link href="/" className="logo">
-            Oslo<span>Regnskap</span>.no
+            OsloRegnskap
           </Link>
-          <nav className="nav-links">
+          <nav className="nav-links desktop-nav">
             <Link href="/regnskapsforer/">Regnskapsfører</Link>
             <Link href="/regnskapskontor/">Regnskapskontor</Link>
             <Link href="/firmaer/">Katalog</Link>
             <Link href="/hva-koster-regnskapsforer-oslo/">Priser</Link>
           </nav>
+          <MobileMenu />
         </div>
       </div>
     </header>

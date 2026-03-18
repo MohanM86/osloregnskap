@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
 import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
 import { AnimatedStat, BarChart, TimelineChart, DonutChart, FAQAccordion } from '@/lib/client-components';
+import { IconPin, IconBuilding, IconChart, IconCoin, IconBook, IconShield, IconCalendar, SectionLabel } from '@/lib/icons';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
@@ -97,7 +98,8 @@ export default function HomePage() {
       </div>
 
       {/* Bydeler grid */}
-      <section style={{ marginTop: '3rem' }} className="animate-in animate-in-6">
+      <section className="section-block animate-in animate-in-6">
+        <SectionLabel icon={<IconPin size={16} />} text="Per bydel" />
         <h2 className="section-heading">Finn regnskapsfører per bydel</h2>
         <p className="section-sub">
           Regnskapsfirmaer i Oslo er spredt over hele byen. Klikk på en bydel for å se alle firmaer i området.
@@ -117,7 +119,8 @@ export default function HomePage() {
       </section>
 
       {/* Service types */}
-      <section style={{ marginTop: '3rem' }}>
+      <section className="section-block">
+        <SectionLabel icon={<IconBuilding size={16} />} text="Tjenester" />
         <h2 className="section-heading">Typer regnskapstjenester</h2>
         <div className="card-grid">
           {[
@@ -135,7 +138,8 @@ export default function HomePage() {
       </section>
 
       {/* Guides */}
-      <section style={{ marginTop: '3rem' }}>
+      <section className="section-block">
+        <SectionLabel icon={<IconBook size={16} />} text="Guider" />
         <h2 className="section-heading">Guider</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }} className="stagger-fade">
           {[
@@ -155,7 +159,8 @@ export default function HomePage() {
       </section>
 
       {/* Content */}
-      <section style={{ marginTop: '3rem' }} className="prose">
+      <section className="section-block prose">
+        <SectionLabel icon={<IconChart size={16} />} text="Oversikt" />
         <h2>Om regnskap i Oslo</h2>
         <p>
           Oslo er Norges største by og det naturlige senteret for regnskapstjenester i landet.
