@@ -1,5 +1,6 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, FirmCard, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -89,7 +90,18 @@ export default function RegnskapsforerPage() {
 
       <section style={{ marginTop: '2rem' }}>
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Alle regnskapsførere i Oslo ({firms.length})</h2>
-        {firms.slice(0, 50).map(f => <FirmCard key={f.orgnr} firm={f} />)}
+        {firms.slice(0, 50).map(f => <Link href={`/firma/${f.slug}/`} style={{ textDecoration: 'none' }}>
+              <div className="firm-card">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap' }}>
+                  <div>
+                    <div className="firm-name">{f.navn}</div>
+                    <div className="firm-meta">Org.nr: {f.orgnr} · {f.orgform}</div>
+                  </div>
+                  <span className="firm-badge">{f.bydel}</span>
+                </div>
+                {f.adresse && <div className="firm-detail">{f.adresse}, {f.postnummer} {f.poststed}</div>}
+              </div>
+            </Link>)}
         {firms.length > 50 && (
           <p style={{ textAlign: 'center', marginTop: '1rem' }}>
             <Link href="/firmaer/" style={{ padding: '0.5rem 1.5rem', border: '1px solid var(--border)', display: 'inline-block' }}>
@@ -99,7 +111,7 @@ export default function RegnskapsforerPage() {
         )}
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Hvor mange regnskapsførere finnes i Oslo?', a: `Det er ${firms.length} registrerte regnskapsførere i Oslo ifølge Brønnøysundregistrene. Disse er registrert under næringskode 69.202 (regnskapsføring og bokføring).` },
         { q: 'Hva koster regnskapsfører i Oslo?', a: 'Timeprisen for regnskapsfører i Oslo ligger typisk mellom 500 og 1 500 kroner. Månedlig fastpris for enkeltpersonforetak er vanligvis 1 000–3 000 kroner, mens AS med ansatte betaler 5 000–15 000 kroner per måned.' },
         { q: 'Må regnskapsfører være autorisert?', a: 'Ja, alle som driver regnskapsføring for andre må ha autorisasjon fra Finanstilsynet. Autorisasjon krever relevant utdanning, praksis og vandelsattest. Sjekk alltid at regnskapsføreren er autorisert før du inngår avtale.' },

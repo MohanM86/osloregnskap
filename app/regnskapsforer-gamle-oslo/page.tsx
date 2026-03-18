@@ -1,5 +1,6 @@
 import { getAllFirms, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, FirmCard, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -64,7 +65,18 @@ export default function RegnskapsforerGamleosloPage() {
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>
           Alle regnskapsfirmaer i Gamle Oslo ({firms.length})
         </h2>
-        {firms.map(f => <FirmCard key={f.orgnr} firm={f} />)}
+        {firms.map(f => <Link href={`/firma/${f.slug}/`} style={{ textDecoration: 'none' }}>
+              <div className="firm-card">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap' }}>
+                  <div>
+                    <div className="firm-name">{f.navn}</div>
+                    <div className="firm-meta">Org.nr: {f.orgnr} · {f.orgform}</div>
+                  </div>
+                  <span className="firm-badge">{f.bydel}</span>
+                </div>
+                {f.adresse && <div className="firm-detail">{f.adresse}, {f.postnummer} {f.poststed}</div>}
+              </div>
+            </Link>)}
         {firms.length === 0 && (
           <p style={{ color: 'var(--muted)' }}>
             Det er foreløpig ingen regnskapsfirmaer registrert med forretningsadresse i Gamle Oslo.
@@ -85,7 +97,7 @@ export default function RegnskapsforerGamleosloPage() {
         </div>
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Hvor mange regnskapsfirmaer er det i Gamle Oslo?', a: `Det er ${firms.length} registrerte regnskapsfirmaer i Gamle Oslo ifølge Brønnøysundregistrene.` },
         { q: 'Må jeg bruke regnskapsfører i Gamle Oslo?', a: 'Nei, du trenger ikke bruke en regnskapsfører i din egen bydel. Med moderne skybaserte løsninger kan regnskapsføreren jobbe fra hvor som helst. Mange foretrekker likevel en lokal regnskapsfører for enklere kommunikasjon.' },
         { q: 'Hva koster regnskapsfører i Gamle Oslo?', a: 'Prisene er omtrent de samme som ellers i Oslo. Typisk 500–1 500 kroner per time, eller 1 000–15 000 kroner per måned avhengig av bedriftsstørrelse og behov.' },

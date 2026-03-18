@@ -1,5 +1,6 @@
 import { getAllFirms } from '@/lib/data';
-import { Breadcrumb, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -113,7 +114,7 @@ export default function HvordanVelgePage() {
         <p>Se vår <Link href="/firmaer/">komplette oversikt over {firms.length} regnskapsfirmaer i Oslo</Link>.</p>
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Hva er det viktigste å se etter hos en regnskapsfører?', a: 'Det viktigste er at regnskapsføreren er autorisert, har erfaring med din bransje, bruker moderne systemer og er tilgjengelig for spørsmål. Pris er viktig, men bør ikke være det eneste kriteriet.' },
         { q: 'Bør jeg velge en stor eller liten regnskapsfører?', a: 'Det avhenger av dine behov. Små regnskapsførere gir ofte tettere oppfølging og lavere pris, mens større byråer kan tilby bredere kompetanse og bedre kapasitet.' },
         { q: 'Hvordan bytter jeg regnskapsfører?', a: 'Si opp avtalen med eksisterende regnskapsfører med avtalt oppsigelsestid. Den nye regnskapsføreren vil bistå med å innhente dokumentasjon og sørge for en smidig overgang.' },

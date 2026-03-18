@@ -1,5 +1,6 @@
 import { getAllFirms } from '@/lib/data';
-import { Breadcrumb, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -92,7 +93,7 @@ export default function RegnskapENKPage() {
         </p>
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Må enkeltpersonforetak føre regnskap?', a: 'Ja, alle enkeltpersonforetak har bokføringsplikt. Du må dokumentere alle økonomiske transaksjoner. ENK med omsetning under 50 000 kr kan bruke forenklet bokføring.' },
         { q: 'Hva koster regnskapsfører for ENK i Oslo?', a: 'Typisk 1 000–3 000 kroner per måned for et enkeltpersonforetak med moderat aktivitet. Prisen avhenger av antall bilag og om du er MVA-registrert.' },
         { q: 'Kan jeg føre regnskapet selv som ENK?', a: 'Ja, mange enkeltpersonforetak fører regnskapet selv. Bruk et godkjent regnskapsprogram som Fiken, Visma eller Tripletex. Vurder regnskapsfører hvis du har høy omsetning eller komplekse forhold.' },

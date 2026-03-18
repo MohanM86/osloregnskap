@@ -1,5 +1,6 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -109,7 +110,7 @@ export default function BesteRegnskapsKontorPage() {
         </p>
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Hvilket regnskapskontor i Oslo er best?', a: `Det beste regnskapskontoret avhenger av dine behov. Oslo har ${firms.length} registrerte regnskapsfirmaer. Vurder bransjeerfaring, pris, beliggenhet og tilgjengelighet for å finne det rette kontoret for din bedrift.` },
         { q: 'Hvor finner jeg regnskapskontor nær meg i Oslo?', a: 'Bruk vår bydelsoversikt for å finne regnskapskontor i din bydel. Vi har listet alle registrerte regnskapsfirmaer per bydel med adresse og kontaktinfo.' },
         { q: 'Skal jeg velge et stort eller lite regnskapskontor?', a: 'Store kontorer tilbyr bredere kompetanse og mer kapasitet, mens mindre kontorer ofte gir tettere personlig oppfølging og lavere pris. Velg basert på dine konkrete behov.' },

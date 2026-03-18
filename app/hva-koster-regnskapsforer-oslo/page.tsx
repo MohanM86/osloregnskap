@@ -1,5 +1,6 @@
 import { getAllFirms } from '@/lib/data';
-import { Breadcrumb, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -151,7 +152,7 @@ export default function HvaKosterPage() {
         </p>
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Hva koster regnskapsfører for enkeltpersonforetak i Oslo?', a: 'For et enkeltpersonforetak med inntil 50 bilag per måned og ingen ansatte, koster regnskapsfører typisk 1 000–3 000 kroner per måned i Oslo.' },
         { q: 'Hva koster regnskapsfører for AS i Oslo?', a: 'For et aksjeselskap uten ansatte koster regnskapsfører typisk 2 000–5 000 kroner per måned. Med ansatte øker prisen til 5 000–15 000 kroner per måned.' },
         { q: 'Er det billigere å føre regnskap selv?', a: 'Ja, men det krever tid og kompetanse. For enkeltpersonforetak med få transaksjoner kan det lønne seg å bruke et enkelt regnskapsprogram. For AS anbefales det generelt å bruke autorisert regnskapsfører.' },

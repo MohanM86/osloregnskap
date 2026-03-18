@@ -1,5 +1,6 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -88,7 +89,7 @@ export default function HjelpMedRegnskapPage() {
         </div>
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Trenger jeg regnskapsfører?', a: 'Du er ikke pålagt å bruke regnskapsfører, men alle næringsdrivende har bokføringsplikt. For AS anbefales det sterkt å bruke autorisert regnskapsfører. ENK med lav omsetning kan vurdere å føre regnskapet selv.' },
         { q: 'Kan jeg føre regnskapet selv?', a: 'Ja, det finnes brukervennlige regnskapsprogrammer som Fiken, Tripletex og Visma. For enkle forhold med få transaksjoner kan du fint føre regnskapet selv. Ved større omsetning eller komplekse forhold anbefales regnskapsfører.' },
         { q: 'Hva koster det å få hjelp med regnskap i Oslo?', a: 'Regnskapsfører i Oslo koster typisk 1 000–15 000 kr/mnd avhengig av bedriftstype og omfang. Regnskapsprogrammer koster fra 0–500 kr/mnd for grunnleggende versjoner.' },

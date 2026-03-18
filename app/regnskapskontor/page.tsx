@@ -1,5 +1,6 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, FirmCard, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -101,7 +102,18 @@ export default function RegnskapsKontorPage() {
 
       <section style={{ marginTop: '2rem' }}>
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Alle regnskapskontor i Oslo ({firms.length})</h2>
-        {firms.slice(0, 40).map(f => <FirmCard key={f.orgnr} firm={f} />)}
+        {firms.slice(0, 40).map(f => <Link href={`/firma/${f.slug}/`} style={{ textDecoration: 'none' }}>
+              <div className="firm-card">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap' }}>
+                  <div>
+                    <div className="firm-name">{f.navn}</div>
+                    <div className="firm-meta">Org.nr: {f.orgnr} · {f.orgform}</div>
+                  </div>
+                  <span className="firm-badge">{f.bydel}</span>
+                </div>
+                {f.adresse && <div className="firm-detail">{f.adresse}, {f.postnummer} {f.poststed}</div>}
+              </div>
+            </Link>)}
         <p style={{ textAlign: 'center', marginTop: '1rem' }}>
           <Link href="/firmaer/" style={{ padding: '0.5rem 1.5rem', border: '1px solid var(--border)', display: 'inline-block' }}>
             Se alle {firms.length} regnskapskontor →
@@ -109,7 +121,7 @@ export default function RegnskapsKontorPage() {
         </p>
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Hvor mange regnskapskontor er det i Oslo?', a: `Det er ${firms.length} registrerte regnskapskontor i Oslo ifølge Brønnøysundregistrene.` },
         { q: 'Hva er forskjellen på regnskapskontor og regnskapsbyrå?', a: 'I praksis brukes begrepene regnskapskontor og regnskapsbyrå om hverandre. Et regnskapsbyrå er gjerne et litt større kontor med flere ansatte og bredere tjenestetilbud, men det finnes ingen formell forskjell.' },
         { q: 'Hvordan finner jeg regnskapskontor nær meg i Oslo?', a: 'Du kan finne regnskapskontor i din bydel ved å bruke vår bydelsoversikt. Vi har listet alle regnskapskontor per bydel i Oslo, basert på registrert forretningsadresse.' },

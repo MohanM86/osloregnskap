@@ -1,5 +1,6 @@
 import { getAllFirms } from '@/lib/data';
-import { Breadcrumb, FAQ, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
+import { FAQAccordion } from '@/lib/client-components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -93,7 +94,7 @@ export default function RegnskapASPage() {
         </p>
       </section>
 
-      <FAQ items={[
+      <FAQAccordion items={[
         { q: 'Trenger AS regnskapsfører?', a: 'Det er ikke lovpålagt, men sterkt anbefalt. AS har full regnskapsplikt med årsregnskap, og kravene er komplekse nok til at de fleste bør bruke autorisert regnskapsfører.' },
         { q: 'Hva koster regnskapsfører for AS i Oslo?', a: 'Typisk 2 000–5 000 kr/mnd for AS uten ansatte, og 5 000–15 000 kr/mnd for AS med ansatte. Prisen avhenger av bilagsvolum og antall ansatte.' },
         { q: 'Kan AS velge bort revisor?', a: 'Ja, små AS kan velge bort revisor dersom de har under 7 millioner i driftsinntekter, under 27 millioner i balansesum og 10 eller færre årsverk. Generalforsamlingen må vedta fravalg.' },

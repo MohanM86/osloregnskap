@@ -1,5 +1,5 @@
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
-import { Breadcrumb, FirmCard, InternalLinks } from '@/lib/components';
+import { Breadcrumb, InternalLinks } from '@/lib/components';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 
@@ -40,7 +40,18 @@ export default function RegnskapskontorerPage() {
 
       <section>
         <h2 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>Alle regnskapskontorer ({firms.length})</h2>
-        {firms.map(f => <FirmCard key={f.orgnr} firm={f} />)}
+        {firms.map(f => <Link href={`/firma/${f.slug}/`} style={{ textDecoration: 'none' }}>
+              <div className="firm-card">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap' }}>
+                  <div>
+                    <div className="firm-name">{f.navn}</div>
+                    <div className="firm-meta">Org.nr: {f.orgnr} · {f.orgform}</div>
+                  </div>
+                  <span className="firm-badge">{f.bydel}</span>
+                </div>
+                {f.adresse && <div className="firm-detail">{f.adresse}, {f.postnummer} {f.poststed}</div>}
+              </div>
+            </Link>)}
       </section>
 
       <InternalLinks exclude="/regnskapskontorer/" />

@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="nb">
       <body>
         <Header />
-        <main style={{ minHeight: '80vh', paddingTop: '2rem', paddingBottom: '2rem' }}>
+        <main style={{ minHeight: '80vh', paddingBottom: '2rem' }}>
           {children}
         </main>
         <Footer />
