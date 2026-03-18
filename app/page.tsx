@@ -70,26 +70,67 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <SchemaFAQ items={faqItems} />
 
-      {/* Hero */}
+      {/* Hero with search — Google layout */}
       <section className="hero">
-        <h1 className="animate-in animate-in-1">Regnskap Oslo</h1>
+        <h1 className="animate-in animate-in-1">Regnskapsfirmaer i Oslo</h1>
         <p className="animate-in animate-in-2">
           Komplett oversikt over {firms.length} regnskapsfirmaer i Oslo, fordelt på {bydeler.length} bydeler.
-          Data direkte  — oppdatert, uavhengig og fullstendig.
+          Oppdatert, uavhengig og fullstendig.
         </p>
+
+        <div className="hero-checks animate-in animate-in-3">
+          <span className="hero-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> {firms.length} firmaer</span>
+          <span className="hero-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> {bydeler.length} bydeler</span>
+          <span className="hero-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> Offentlige data</span>
+        </div>
       </section>
 
       {/* Stats */}
       <div className="stats-row animate-in animate-in-3">
-        <AnimatedStat value={firms.length} label="Regnskapsfirmaer" />
-        <AnimatedStat value={regnskapForere.length} label="Regnskapsførere" />
-        <AnimatedStat value={revisorer.length} label="Revisjonsfirmaer" />
-        <AnimatedStat value={bydeler.length} label="Bydeler dekket" />
+        <AnimatedStat value={firms.length} label="Firmaer totalt" />
+        <AnimatedStat value={regnskapForere.length} label="Regnskap" />
+        <AnimatedStat value={revisorer.length} label="Revisjon" />
+        <AnimatedStat value={bydeler.length} label="Bydeler" />
       </div>
 
+      {/* Chip filters + firm grid — Google layout */}
+      <section className="animate-in animate-in-4">
+        <div className="filter-row">
+          {bydeler.slice(0, 7).map(b => {
+            const info = BYDELER_INFO[b.name];
+            if (!info) return null;
+            return (
+              <Link key={b.slug} href={`/regnskapsforer-${info.urlSlug}/`} className="filter-chip">
+                {b.name} {b.count}
+              </Link>
+            );
+          })}
+          <Link href="/firmaer/" className="filter-chip">Alle →</Link>
+        </div>
+
+        <div className="firm-grid">
+          {firms.slice(0, 8).map(f => (
+            <Link key={f.orgnr} href={`/firma/${f.slug}/`} style={{ textDecoration: 'none' }}>
+              <div className="firm-card">
+                <div className="firm-name">{f.navn}</div>
+                <div className="firm-detail">{f.adresse ? `${f.adresse}, ${f.postnummer} ${f.poststed}` : f.bydel}</div>
+                <div style={{ display: 'flex', gap: '0.35rem', marginTop: '0.5rem', flexWrap: 'wrap' }}>
+                  <span className={f.naeringskode === '69.201' ? 'badge-blue' : 'badge-green'}>{f.naeringsbeskrivelse === 'Revisjon' ? 'Revisjon' : 'Regnskap'}</span>
+                  <span className="firm-badge">{f.bydel}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div style={{ textAlign: 'center', padding: '1rem 0' }}>
+          <Link href="/firmaer/" style={{ fontSize: '0.88rem', color: 'var(--green-mid)', fontWeight: 500 }}>
+            Vis alle {firms.length} firmaer →
+          </Link>
+        </div>
+      </section>
+
       {/* Full firm catalog — all 386 in HTML, grouped by bydel */}
-      <section className="section-block animate-in animate-in-4">
-        <SectionLabel icon={<IconBuilding size={16} />} text="Katalog" />
+      <section className="section-block">
         <CompactCatalog
           firms={firms}
           bydeler={bydeler.map(b => ({
@@ -110,14 +151,10 @@ export default function HomePage() {
         <TimelineChart title="Stiftelsesår — vekst over tid" data={timelineData} />
       </div>
 
-      {/* Bydeler grid */}
+      {/* Bydeler grid — Google 3-col */}
       <section className="section-block animate-in animate-in-6">
-        <SectionLabel icon={<IconPin size={16} />} text="Per bydel" />
-        <h2 className="section-heading">Finn regnskapsfører per bydel</h2>
-        <p className="section-sub">
-          Regnskapsfirmaer i Oslo er spredt over hele byen. Klikk på en bydel for å se alle firmaer i området.
-        </p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '0.75rem' }} className="stagger-fade">
+        <h2 className="section-heading">Bydeler i Oslo</h2>
+        <div className="bydel-grid-3 stagger-fade">
           {bydeler.map(b => {
             const info = BYDELER_INFO[b.name];
             if (!info) return null;

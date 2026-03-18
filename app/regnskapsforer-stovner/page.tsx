@@ -57,20 +57,14 @@ export default function RegnskapsforerStovnerPage() {
         <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>
           Alle regnskapsfirmaer i Stovner ({firms.length})
         </h2>
-        <div className="stagger-fade" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+        <div className="firm-grid stagger-fade">
           {firms.map(f => (
             <Link key={f.orgnr} href={`/firma/${f.slug}/`} style={{ textDecoration: 'none' }}>
               <div className="firm-card">
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap' }}>
-                  <div>
-                    <div className="firm-name">{f.navn}</div>
-                    <div className="firm-meta">Org.nr: {f.orgnr} · {f.orgform}</div>
-                  </div>
-                  <span className="badge-green">{f.bydel}</span>
-                </div>
-                {f.adresse && <div className="firm-detail">{f.adresse}, {f.postnummer} {f.poststed}</div>}
-                <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem', flexWrap: 'wrap' }}>
-                  <span className={f.naeringskode === '69.201' ? 'badge-blue' : 'badge-green'}>{f.naeringsbeskrivelse}</span>
+                <div className="firm-name">{f.navn}</div>
+                <div className="firm-detail">{f.adresse ? `${f.adresse}, ${f.postnummer} ${f.poststed}` : ''}</div>
+                <div style={{ display: 'flex', gap: '0.35rem', marginTop: '0.5rem', flexWrap: 'wrap' }}>
+                  <span className={f.naeringskode === '69.201' ? 'badge-blue' : 'badge-green'}>{f.naeringsbeskrivelse === 'Revisjon' ? 'Revisjon' : 'Regnskap'}</span>
                   {f.stiftet && <span className="firm-badge">Stiftet {f.stiftet.substring(0, 4)}</span>}
                   {f.mvaRegistrert && <span className="badge-amber">MVA</span>}
                 </div>

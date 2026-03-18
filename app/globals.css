@@ -243,3 +243,18 @@ h1, h2, h3, h4 { font-family: var(--font); font-weight: 700; line-height: 1.15; 
 @media (min-width: 769px) {
   .mobile-menu-btn { display: none; }
 }
+
+/* Google-layout: search in hero */
+.hero-search { display: flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 1.5rem; background: var(--mint-light); position: relative; margin-bottom: 0.75rem; }
+.hero-search input { flex: 1; border: none; background: none; font-family: var(--font); font-size: 0.92rem; color: var(--fg); outline: none; font-weight: 400; }
+.hero-search input::placeholder { color: var(--fg-muted); font-weight: 300; }
+.hero-search svg { flex-shrink: 0; color: var(--fg-muted); }
+.hero-search-btn { background: var(--btn-green); color: #fff; border: none; padding: 0.5rem 1.25rem; border-radius: 0.65rem; font-family: var(--font); font-size: 0.82rem; font-weight: 500; cursor: pointer; }
+
+/* Google-layout: 2-col firm grid */
+.firm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; }
+@media (max-width: 768px) { .firm-grid { grid-template-columns: 1fr; } }
+
+/* Google-layout: bydel grid 3-col */
+.bydel-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.65rem; }
+@media (max-width: 768px) { .bydel-grid-3 { grid-template-columns: 1fr 1fr; } }
