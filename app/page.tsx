@@ -40,8 +40,8 @@ export default function HomePage() {
 
   // Donut data
   const donutData = [
-    { label: 'Regnskapsføring', value: regnskapForere.length, color: '#c45d3e' },
-    { label: 'Revisjon', value: revisorer.length, color: '#d4785f' },
+    { label: 'Regnskapsføring', value: regnskapForere.length, color: '#B5121B' },
+    { label: 'Revisjon', value: revisorer.length, color: '#d63a42' },
     { label: 'Annet', value: firms.length - regnskapForere.length - revisorer.length, color: '#e8e5e1' },
   ];
 
