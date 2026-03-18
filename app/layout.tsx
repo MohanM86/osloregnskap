@@ -3,7 +3,7 @@ import { Header, Footer } from '@/lib/components';
 import './globals.css';
 
 export const viewport: Viewport = {
-  themeColor: '#B5121B',
+  themeColor: '#0F1B3D',
   width: 'device-width',
   initialScale: 1,
 };
