@@ -105,8 +105,7 @@ export default async function FirmPage({ params }: { params: Promise<{ slug: str
         <h2>Om {firm.navn}</h2>
         <p>
           {firm.navn} er et regnskapsfirma lokalisert i {firm.bydel} i Oslo.
-          Firmaet er registrert som {firm.orgform.toLowerCase()} i Brønnøysundregistrene med
-          organisasjonsnummer {firm.orgnr}.
+          Firmaet er registrert som {firm.orgform.toLowerCase()} med organisasjonsnummer {firm.orgnr}.
           {stiftetYear && ` Selskapet ble stiftet ${firm.stiftet} og har vært aktivt i ${yearsActive} år.`}
         </p>
         <p>
@@ -115,7 +114,7 @@ export default async function FirmPage({ params }: { params: Promise<{ slug: str
           {' '}Forretningsadressen er {firm.adresse}, {firm.postnummer} {firm.poststed}.
         </p>
         <p>
-          Data om {firm.navn} er hentet fra Brønnøysundregistrene og er offentlig tilgjengelig informasjon.
+          Data om {firm.navn} er hentet  og er offentlig tilgjengelig informasjon.
         </p>
       </section>
 

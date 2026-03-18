@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata = seo({
   title: 'Regnskapsfører Bjerke Oslo — Finn regnskapsfører i Bjerke',
-  description: 'Oversikt over regnskapsførere i Bjerke, Oslo. Komplett liste med adresser og kontaktinfo. Data fra Brønnøysundregistrene.',
+  description: 'Oversikt over regnskapsførere i Bjerke, Oslo. Komplett liste med adresser og bydelsinformasjon. ',
   path: '/regnskapsforer-bjerke/',
 });
 
@@ -108,12 +108,12 @@ export default function RegnskapsforerBjerkePage() {
       </section>
 
       <SchemaFAQ items={[
-        { q: 'Hvor mange regnskapsfirmaer er det i Bjerke?', a: `Det er ${firms.length} registrerte regnskapsfirmaer i Bjerke ifølge Brønnøysundregistrene.` },
+        { q: 'Hvor mange regnskapsfirmaer er det i Bjerke?', a: `Det er ${firms.length} registrerte regnskapsfirmaer i Bjerke .` },
         { q: 'Må jeg bruke regnskapsfører i Bjerke?', a: 'Nei, du trenger ikke bruke en regnskapsfører i din egen bydel. Med moderne skybaserte løsninger kan regnskapsføreren jobbe fra hvor som helst. Mange foretrekker likevel en lokal regnskapsfører for enklere kommunikasjon.' },
         { q: 'Hva koster regnskapsfører i Bjerke?', a: 'Prisene er omtrent de samme som ellers i Oslo. Typisk 500–1 500 kroner per time, eller 1 000–15 000 kroner per måned avhengig av bedriftsstørrelse og behov.' },
       ]} />
       <FAQAccordion items={[
-        { q: 'Hvor mange regnskapsfirmaer er det i Bjerke?', a: `Det er ${firms.length} registrerte regnskapsfirmaer i Bjerke ifølge Brønnøysundregistrene.` },
+        { q: 'Hvor mange regnskapsfirmaer er det i Bjerke?', a: `Det er ${firms.length} registrerte regnskapsfirmaer i Bjerke .` },
         { q: 'Må jeg bruke regnskapsfører i Bjerke?', a: 'Nei, du trenger ikke bruke en regnskapsfører i din egen bydel. Med moderne skybaserte løsninger kan regnskapsføreren jobbe fra hvor som helst. Mange foretrekker likevel en lokal regnskapsfører for enklere kommunikasjon.' },
         { q: 'Hva koster regnskapsfører i Bjerke?', a: 'Prisene er omtrent de samme som ellers i Oslo. Typisk 500–1 500 kroner per time, eller 1 000–15 000 kroner per måned avhengig av bedriftsstørrelse og behov.' },
       ]} />

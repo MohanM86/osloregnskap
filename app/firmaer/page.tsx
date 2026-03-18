@@ -5,7 +5,7 @@ import { seo } from '@/lib/seo';
 
 export const metadata = seo({
   title: 'Alle regnskapsfirmaer i Oslo — Komplett katalog (386 firmaer)',
-  description: 'Komplett katalog over alle 386 registrerte regnskapsfirmaer i Oslo. Søk, filtrer og sorter. Data fra Brønnøysundregistrene.',
+  description: 'Komplett katalog over alle 386 registrerte regnskapsfirmaer i Oslo. Søk, filtrer og sorter. ',
   path: '/firmaer/',
 });
 

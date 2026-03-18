@@ -97,7 +97,7 @@ export default function AutorisertPage() {
           autoriserte regnskapsførere. Registeret er offentlig tilgjengelig og oppdateres løpende.
         </p>
         <p>
-          Alle regnskapsfirmaer i vår oversikt er hentet fra Brønnøysundregistrene og er registrert
+          Alle regnskapsfirmaer i vår oversikt er hentet  og er registrert
           med næringskode for regnskapsføring og bokføring (69.202) eller revisjon (69.201).
           Vi anbefaler likevel å sjekke autorisasjonsstatusen direkte hos Finanstilsynet.
         </p>

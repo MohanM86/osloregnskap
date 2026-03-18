@@ -29,7 +29,7 @@ export default function RegnskapASPage() {
         <p style={{ marginBottom: '1rem' }}>
           Alle aksjeselskaper i Norge har full regnskapsplikt etter regnskapsloven. Dette
           innebærer at du må utarbeide årsregnskap bestående av resultatregnskap, balanse
-          og noter. Årsregnskapet skal sendes til Regnskapsregisteret i Brønnøysund.
+          og noter. Årsregnskapet skal sendes til Regnskapsregisteret.
         </p>
         <p style={{ marginBottom: '1rem' }}>
           I tillegg til regnskapsplikten har alle AS bokføringsplikt. Det betyr at alle

@@ -86,7 +86,7 @@ export default function HvordanVelgePage() {
         </p>
         <p>
           Avklar forventninger rundt responstid, møtefrekvens og kommunikasjonskanaler
-          (e-post, telefon, digitale møter) før du inngår avtale.
+          før du inngår avtale.
         </p>
       </section>
 

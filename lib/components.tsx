@@ -59,7 +59,7 @@ export function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} OsloRegnskap.no — Uavhengig informasjonsside om regnskapstjenester i Oslo</span>
-          <span>Data: Brønnøysundregistrene</span>
+          <span>Offentlig registerdata</span>
         </div>
       </div>
     </footer>

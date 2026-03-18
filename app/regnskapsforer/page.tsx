@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata = seo({
   title: 'Regnskapsfører Oslo — Komplett liste over regnskapsførere',
-  description: 'Finn regnskapsfører i Oslo. Komplett oversikt med 326 autoriserte regnskapsførere fordelt på 15 bydeler. Data fra Brønnøysundregistrene.',
+  description: 'Finn regnskapsfører i Oslo. Komplett oversikt med 326 autoriserte regnskapsførere fordelt på 15 bydeler. ',
   path: '/regnskapsforer/',
 });
 
@@ -114,13 +114,13 @@ export default function RegnskapsforerPage() {
       </section>
 
       <SchemaFAQ items={[
-        { q: 'Hvor mange regnskapsførere finnes i Oslo?', a: `Det er ${firms.length} registrerte regnskapsførere i Oslo ifølge Brønnøysundregistrene. Disse er registrert under næringskode 69.202 (regnskapsføring og bokføring).` },
+        { q: 'Hvor mange regnskapsførere finnes i Oslo?', a: `Det er ${firms.length} registrerte regnskapsførere i Oslo registrert under næringskode 69.202 (regnskapsføring og bokføring).` },
         { q: 'Hva koster regnskapsfører i Oslo?', a: 'Timeprisen for regnskapsfører i Oslo ligger typisk mellom 500 og 1 500 kroner. Månedlig fastpris for enkeltpersonforetak er vanligvis 1 000–3 000 kroner, mens AS med ansatte betaler 5 000–15 000 kroner per måned.' },
         { q: 'Må regnskapsfører være autorisert?', a: 'Ja, alle som driver regnskapsføring for andre må ha autorisasjon fra Finanstilsynet. Autorisasjon krever relevant utdanning, praksis og vandelsattest. Sjekk alltid at regnskapsføreren er autorisert før du inngår avtale.' },
         { q: 'Kan jeg bytte regnskapsfører?', a: 'Ja, du kan bytte regnskapsfører når som helst. Den nye regnskapsføreren vil normalt bistå med overgangsarbeidet og innhente dokumentasjon fra din forrige regnskapsfører.' },
       ]} />
       <FAQAccordion items={[
-        { q: 'Hvor mange regnskapsførere finnes i Oslo?', a: `Det er ${firms.length} registrerte regnskapsførere i Oslo ifølge Brønnøysundregistrene. Disse er registrert under næringskode 69.202 (regnskapsføring og bokføring).` },
+        { q: 'Hvor mange regnskapsførere finnes i Oslo?', a: `Det er ${firms.length} registrerte regnskapsførere i Oslo registrert under næringskode 69.202 (regnskapsføring og bokføring).` },
         { q: 'Hva koster regnskapsfører i Oslo?', a: 'Timeprisen for regnskapsfører i Oslo ligger typisk mellom 500 og 1 500 kroner. Månedlig fastpris for enkeltpersonforetak er vanligvis 1 000–3 000 kroner, mens AS med ansatte betaler 5 000–15 000 kroner per måned.' },
         { q: 'Må regnskapsfører være autorisert?', a: 'Ja, alle som driver regnskapsføring for andre må ha autorisasjon fra Finanstilsynet. Autorisasjon krever relevant utdanning, praksis og vandelsattest. Sjekk alltid at regnskapsføreren er autorisert før du inngår avtale.' },
         { q: 'Kan jeg bytte regnskapsfører?', a: 'Ja, du kan bytte regnskapsfører når som helst. Den nye regnskapsføreren vil normalt bistå med overgangsarbeidet og innhente dokumentasjon fra din forrige regnskapsfører.' },

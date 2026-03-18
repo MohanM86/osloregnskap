@@ -6,7 +6,7 @@ import { seo } from '@/lib/seo';
 
 export const metadata = seo({
   title: 'Regnskap Oslo — Komplett oversikt over regnskapstjenester',
-  description: 'Finn regnskapsfører i Oslo. Komplett katalog med 386 regnskapsfirmaer, guider, priser og oversikt per bydel. Oppdatert med data fra Brønnøysundregistrene.',
+  description: 'Finn regnskapsfører i Oslo. Komplett katalog med 386 regnskapsfirmaer, guider, priser og oversikt per bydel. Oppdatert med data ',
   path: '/',
 });
 
@@ -52,7 +52,7 @@ export default function HomePage() {
   };
 
   const faqItems = [
-    { q: 'Hvor mange regnskapsfirmaer finnes det i Oslo?', a: `Per i dag er det ${firms.length} registrerte regnskapsfirmaer i Oslo ifølge Brønnøysundregistrene. Av disse driver ${regnskapForere.length} med regnskapsføring og bokføring, mens ${revisorer.length} er revisjonsfirmaer.` },
+    { q: 'Hvor mange regnskapsfirmaer finnes det i Oslo?', a: `Per i dag er det ${firms.length} registrerte regnskapsfirmaer i Oslo . Av disse driver ${regnskapForere.length} med regnskapsføring og bokføring, mens ${revisorer.length} er revisjonsfirmaer.` },
     { q: 'Hvilken bydel i Oslo har flest regnskapsfirmaer?', a: `Sentrum har flest med ${bydeler.find(b => b.name === 'Sentrum')?.count || 0} firmaer, etterfulgt av Frogner med ${bydeler.find(b => b.name === 'Frogner')?.count || 0}.` },
     { q: 'Hva koster en regnskapsfører i Oslo?', a: 'Timeprisen ligger typisk mellom 500 og 1 500 kroner. For ENK: 1 000–3 000 kr/mnd. For AS med ansatte: 5 000–15 000 kr/mnd.' },
     { q: 'Trenger jeg regnskapsfører i Oslo?', a: 'Du er ikke pålagt å bruke regnskapsfører, men alle næringsdrivende har bokføringsplikt. For AS anbefales det sterkt å bruke autorisert regnskapsfører.' },
@@ -69,7 +69,7 @@ export default function HomePage() {
         <h1 className="animate-in animate-in-1">Regnskap Oslo</h1>
         <p className="animate-in animate-in-2">
           Komplett oversikt over {firms.length} regnskapsfirmaer i Oslo, fordelt på {bydeler.length} bydeler.
-          Data direkte fra Brønnøysundregistrene — oppdatert, uavhengig og fullstendig.
+          Data direkte  — oppdatert, uavhengig og fullstendig.
         </p>
       </section>
 
@@ -117,7 +117,7 @@ export default function HomePage() {
         <div className="card-grid">
           {[
             { href: '/regnskapsforer/', title: 'Regnskapsfører Oslo', desc: `${regnskapForere.length} registrerte regnskapsførere med autorisasjon.` },
-            { href: '/regnskapskontor/', title: 'Regnskapskontor Oslo', desc: 'Oversikt med adresser, kontaktinfo og bydel.' },
+            { href: '/regnskapskontor/', title: 'Regnskapskontor Oslo', desc: 'Oversikt med adresser og bydel.' },
             { href: '/regnskapsbyra/', title: 'Regnskapsbyrå Oslo', desc: 'Fra bokføring til årsoppgjør og rådgivning.' },
             { href: '/autorisert-regnskapsforer/', title: 'Autorisert regnskapsfører', desc: 'Hva autorisasjon betyr og hvorfor det er viktig.' },
           ].map(item => (
@@ -167,7 +167,7 @@ export default function HomePage() {
           og skattemelding. Mange tilbyr også rådgivning innen økonomi, skatt og selskapsstruktur.
         </p>
         <p>
-          Alle regnskapsfirmaer i vår oversikt er hentet fra Brønnøysundregistrene med næringskode 69.202
+          Alle regnskapsfirmaer i vår oversikt er hentet  med næringskode 69.202
           (regnskapsføring og bokføring) eller 69.201 (revisjon).
         </p>
       </section>

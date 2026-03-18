@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata = seo({
   title: 'Regnskapskontorer i Oslo — Komplett katalog',
-  description: 'Oversikt over alle regnskapskontorer i Oslo. 386 registrerte firmaer med adresser, kontaktinfo og bydel fra Brønnøysundregistrene.',
+  description: 'Oversikt over alle regnskapskontorer i Oslo. 386 registrerte firmaer med adresser og bydel ',
   path: '/regnskapskontorer/',
 });
 

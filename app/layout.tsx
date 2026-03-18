@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'OsloRegnskap.no — Komplett oversikt over regnskapstjenester i Oslo',
     template: '%s | OsloRegnskap.no',
   },
-  description: 'Finn regnskapsfører, regnskapskontor og regnskapsbyrå i Oslo. Komplett katalog med 386 registrerte regnskapsfirmaer fordelt på 15 bydeler. Data fra Brønnøysundregistrene.',
+  description: 'Finn regnskapsfører, regnskapskontor og regnskapsbyrå i Oslo. Komplett katalog med 386 registrerte regnskapsfirmaer fordelt på 15 bydeler. ',
   keywords: ['regnskap oslo', 'regnskapsfører oslo', 'regnskapskontor oslo', 'regnskapsbyrå oslo', 'autorisert regnskapsfører oslo', 'bokføring oslo', 'regnskapsfirma oslo'],
   authors: [{ name: 'OsloRegnskap.no' }],
   creator: 'OsloRegnskap.no',
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     url: 'https://osloregnskap.no',
     siteName: 'OsloRegnskap.no',
     title: 'OsloRegnskap.no — Komplett oversikt over regnskapstjenester i Oslo',
-    description: 'Finn regnskapsfører i Oslo. 386 regnskapsfirmaer, 15 bydeler, guider og priser. Data fra Brønnøysundregistrene.',
+    description: 'Finn regnskapsfører i Oslo. 386 regnskapsfirmaer, 15 bydeler, guider og priser. ',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'OsloRegnskap.no — 386 regnskapsfirmaer i Oslo' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'OsloRegnskap.no — Regnskapstjenester i Oslo',
-    description: 'Finn regnskapsfører i Oslo. 386 firmaer, 15 bydeler. Komplett katalog fra Brønnøysundregistrene.',
+    description: 'Finn regnskapsfører i Oslo. 386 firmaer, 15 bydeler. Komplett katalog ',
     images: ['/og-image.png'],
   },
   icons: {
@@ -59,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: 'OsloRegnskap.no',
     url: 'https://osloregnskap.no',
     logo: 'https://osloregnskap.no/icon-512.png',
-    description: 'Komplett og uavhengig oversikt over regnskapstjenester i Oslo. Katalog med 386 registrerte regnskapsfirmaer fra Brønnøysundregistrene.',
+    description: 'Komplett og uavhengig oversikt over regnskapstjenester i Oslo. Katalog med 386 registrerte regnskapsfirmaer ',
     areaServed: {
       '@type': 'City',
       name: 'Oslo',

@@ -40,6 +40,6 @@
 - [Regnskapsfører Bjerke](https://osloregnskap.no/regnskapsforer-bjerke/)
 
 ## Data
-Alle firmaopplysninger er hentet fra Brønnøysundregistrene (Enhetsregisteret).
+Alle firmaopplysninger er basert på offentlig tilgjengelige registerdata.
 Firmaer er registrert under næringskode 69.202 (regnskapsføring og bokføring) eller 69.201 (revisjon).
 Totalt 386 aktive regnskapsfirmaer med forretningsadresse i Oslo.
