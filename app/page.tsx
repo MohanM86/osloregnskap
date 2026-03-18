@@ -133,7 +133,7 @@ export default function HomePage() {
       </section>
 
       {/* Charts row */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1rem', margin: '2rem 0' }} className="animate-in animate-in-4">
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '1rem', margin: '2rem 0' }} className="animate-in animate-in-4">
         <BarChart title="Regnskapsfirmaer per bydel" data={bydelChartData} />
         <DonutChart title="Fordeling etter type" data={donutData} />
       </div>
@@ -171,8 +171,8 @@ export default function HomePage() {
             { href: '/autorisert-regnskapsforer/', title: 'Autorisert regnskapsfører', desc: 'Hva autorisasjon betyr og hvorfor det er viktig.' },
           ].map(item => (
             <Link key={item.href} href={item.href} className="card" style={{ textDecoration: 'none' }}>
-              <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>{item.title}</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--fg-secondary)' }}>{item.desc}</p>
+              <h3 style={{ fontSize: '0.95rem', marginBottom: '0.25rem' }}>{item.title}</h3>
+              <p style={{ fontSize: '0.82rem', color: 'var(--fg-secondary)', fontWeight: 300 }}>{item.desc}</p>
             </Link>
           ))}
         </div>
