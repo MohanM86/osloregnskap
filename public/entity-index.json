@@ -1,0 +1,1809 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Regnskapsfirmaer i Oslo",
+  "description": "Komplett oversikt over 386 registrerte regnskapsfirmaer i Oslo",
+  "numberOfItems": 386,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "AccountingService",
+        "name": "13/16 HOLDING AS",
+        "url": "https://osloregnskap.no/firma/13-16-holding-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Furubråtveien 21",
+          "postalCode": "1170",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "921078528"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "AccountingService",
+        "name": "A.R. CONSULTING AS",
+        "url": "https://osloregnskap.no/firma/a-r-consulting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "c/o Kvarberg advokatfirma AS, Bygdøy allé 2",
+          "postalCode": "0257",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "940360927"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "AccountingService",
+        "name": "A1 PRIMA REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/a1-prima-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Professor Birkelands vei 36",
+          "postalCode": "1081",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "960031180"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ABACUS REGNSKAPSKONTOR AS",
+        "url": "https://osloregnskap.no/firma/abacus-regnskapskontor-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Oluf Onsums vei 9",
+          "postalCode": "0680",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "932102285"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ABC ACCOUNTING AS",
+        "url": "https://osloregnskap.no/firma/abc-accounting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Eikenga 33A",
+          "postalCode": "0579",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grünerløkka",
+          "addressCountry": "NO"
+        },
+        "identifier": "913960750"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ABG BUSINESS MANAGEMENT AS",
+        "url": "https://osloregnskap.no/firma/abg-business-management-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ruseløkkveien 26",
+          "postalCode": "0251",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "921059442"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ABOVEIT FINANCIAL SERVICES AS",
+        "url": "https://osloregnskap.no/firma/aboveit-financial-services-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dronning Eufemias gate 8",
+          "postalCode": "0191",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "934513932"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ACCOUNT IT AS",
+        "url": "https://osloregnskap.no/firma/account-it-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Nordstrandveien 28A",
+          "postalCode": "1163",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "914277574"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ACCOUNTA AS",
+        "url": "https://osloregnskap.no/firma/accounta-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Prost Hallings vei 11",
+          "postalCode": "0666",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "929003772"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ACCOUNTABLE AS",
+        "url": "https://osloregnskap.no/firma/accountable-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C/o Anders Rundgren, Sigurd Hoels vei 104",
+          "postalCode": "0655",
+          "addressLocality": "Oslo",
+          "addressRegion": "Gamle Oslo",
+          "addressCountry": "NO"
+        },
+        "identifier": "923567070"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ACCRU PARTNERS NORGE AS",
+        "url": "https://osloregnskap.no/firma/accru-partners-norge-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sørkedalsveien 8",
+          "postalCode": "0369",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "933727424"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ACS FINANS AS",
+        "url": "https://osloregnskap.no/firma/acs-finans-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2 etasje, Oppgang A, Lilleakerveien 31",
+          "postalCode": "0283",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "987840846"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AD-REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/ad-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Selma Ellefsens vei 6",
+          "postalCode": "0581",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grünerløkka",
+          "addressCountry": "NO"
+        },
+        "identifier": "936773966"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ADIFICO ØKONOMI AS",
+        "url": "https://osloregnskap.no/firma/adifico-okonomi-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rolf Hofmos gate 19",
+          "postalCode": "0655",
+          "addressLocality": "Oslo",
+          "addressRegion": "Gamle Oslo",
+          "addressCountry": "NO"
+        },
+        "identifier": "984560583"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ADO REVISJON AS",
+        "url": "https://osloregnskap.no/firma/ado-revisjon-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Engebrets vei 3",
+          "postalCode": "0275",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "993231924"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ADVOKATFIRMAET AIDER LEGAL AS",
+        "url": "https://osloregnskap.no/firma/advokatfirmaet-aider-legal-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karl Johans gate 37",
+          "postalCode": "0162",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "835700402"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AHS CONSULTING AS",
+        "url": "https://osloregnskap.no/firma/ahs-consulting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "c/o Anette Skaar, Frederik Stangs gate 4A",
+          "postalCode": "0272",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "927435764"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AIDER AS",
+        "url": "https://osloregnskap.no/firma/aider-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karl Johans gate 37",
+          "postalCode": "0162",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "922633452"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AIDER KONSERN AS",
+        "url": "https://osloregnskap.no/firma/aider-konsern-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karl Johans gate 37",
+          "postalCode": "0162",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "923090029"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AILE TEAM AS",
+        "url": "https://osloregnskap.no/firma/aile-team-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karihaugveien 89",
+          "postalCode": "1086",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "929587758"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AITA AS",
+        "url": "https://osloregnskap.no/firma/aita-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bogstadveien 27B",
+          "postalCode": "0355",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "997730844"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AKB REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/akb-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Enebakkveien 227B",
+          "postalCode": "1187",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "989182668"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AKETO MB AS",
+        "url": "https://osloregnskap.no/firma/aketo-mb-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rosenhoffgata 4B",
+          "postalCode": "0569",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grünerløkka",
+          "addressCountry": "NO"
+        },
+        "identifier": "936868800"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AKETO RF AS",
+        "url": "https://osloregnskap.no/firma/aketo-rf-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rosenhoffgata 4B",
+          "postalCode": "0569",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grünerløkka",
+          "addressCountry": "NO"
+        },
+        "identifier": "930326895"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AKSION REVISJON AS",
+        "url": "https://osloregnskap.no/firma/aksion-revisjon-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Parkveien 21",
+          "postalCode": "0352",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "916823649"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AKTIVE REGNSKAP OG LØNN AS",
+        "url": "https://osloregnskap.no/firma/aktive-regnskap-og-lonn-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lilleakerveien 31B",
+          "postalCode": "0283",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "933253635"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ALFASET ACCOUNTING AS",
+        "url": "https://osloregnskap.no/firma/alfaset-accounting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Persveien 22",
+          "postalCode": "0581",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grünerløkka",
+          "addressCountry": "NO"
+        },
+        "identifier": "927616238"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ALIANCO REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/alianco-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Brugata 1",
+          "postalCode": "0186",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "936347142"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ALLE TALL AS",
+        "url": "https://osloregnskap.no/firma/alle-tall-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karoline Kristiansens vei 1",
+          "postalCode": "0661",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "997201213"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ALLIANCE PROSJEKT AS",
+        "url": "https://osloregnskap.no/firma/alliance-prosjekt-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Akersgata 7-9",
+          "postalCode": "0158",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "950671033"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ALNA REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/alna-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Verkseier Furulunds vei 1",
+          "postalCode": "0668",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "994204327"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ALPHA REVISJON AS",
+        "url": "https://osloregnskap.no/firma/alpha-revisjon-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Holbergs gate 21",
+          "postalCode": "0166",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "975800679"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ALT INNEN AS",
+        "url": "https://osloregnskap.no/firma/alt-innen-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ole Deviks vei 2",
+          "postalCode": "0666",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "925879223"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AMESTO ACCOUNTHOUSE AS",
+        "url": "https://osloregnskap.no/firma/amesto-accounthouse-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Smeltedigelen 1",
+          "postalCode": "0195",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "957170005"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AMICA REVISJON AS",
+        "url": "https://osloregnskap.no/firma/amica-revisjon-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Engebrets vei 3",
+          "postalCode": "0275",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "914601398"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AN CONSULT AS",
+        "url": "https://osloregnskap.no/firma/an-consult-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lindebergveien 53A",
+          "postalCode": "1069",
+          "addressLocality": "Oslo",
+          "addressRegion": "Alna",
+          "addressCountry": "NO"
+        },
+        "identifier": "933274861"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ANDERSENS ALLSERVICE AS",
+        "url": "https://osloregnskap.no/firma/andersens-allservice-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "c/o Dan Ståle Andersen, Lachmanns vei 51",
+          "postalCode": "0495",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordre Aker",
+          "addressCountry": "NO"
+        },
+        "identifier": "926980300"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ANDERSSON ACCOUNTING AS",
+        "url": "https://osloregnskap.no/firma/andersson-accounting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sandstuveien 6B",
+          "postalCode": "1178",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "921861206"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ANEW KONTOR AS",
+        "url": "https://osloregnskap.no/firma/anew-kontor-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bedriftsveien 6",
+          "postalCode": "0950",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grorud",
+          "addressCountry": "NO"
+        },
+        "identifier": "934984870"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ARCTIC REAL ESTATE MANAGEMENT AS",
+        "url": "https://osloregnskap.no/firma/arctic-real-estate-management-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Haakon VIIs gate 5",
+          "postalCode": "0161",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "995691728"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ARIANA REGNSKAPSBYRÅ AS",
+        "url": "https://osloregnskap.no/firma/ariana-regnskapsbyra-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "c/o Nik Mohammad Dost, Tante Ulrikkes vei 10A",
+          "postalCode": "0984",
+          "addressLocality": "Oslo",
+          "addressRegion": "Stovner",
+          "addressCountry": "NO"
+        },
+        "identifier": "935518644"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ARINTO REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/arinto-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karl Johans gate 37",
+          "postalCode": "0162",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "934337158"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AS QUATRO",
+        "url": "https://osloregnskap.no/firma/as-quatro/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Fred. Olsens gate 2",
+          "postalCode": "0152",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "917742049"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ASPIA NORGE AS",
+        "url": "https://osloregnskap.no/firma/aspia-norge-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Innspurten 1A",
+          "postalCode": "0663",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "923792457"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ASTON BUSINESS MANAGEMENT AS",
+        "url": "https://osloregnskap.no/firma/aston-business-management-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Thunes vei 2",
+          "postalCode": "0274",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "912386872"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ASTRUP FEARNLEY SOLUTIONS AS",
+        "url": "https://osloregnskap.no/firma/astrup-fearnley-solutions-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dronning Eufemias gate 8",
+          "postalCode": "0191",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "959151474"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ATHENE TAX AS",
+        "url": "https://osloregnskap.no/firma/athene-tax-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sandakerveien 138",
+          "postalCode": "0484",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordre Aker",
+          "addressCountry": "NO"
+        },
+        "identifier": "897863022"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ATO REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/ato-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Borggata 1",
+          "postalCode": "0650",
+          "addressLocality": "Oslo",
+          "addressRegion": "Gamle Oslo",
+          "addressCountry": "NO"
+        },
+        "identifier": "993920037"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "item": {
+        "@type": "AccountingService",
+        "name": "ATRIS AS",
+        "url": "https://osloregnskap.no/firma/atris-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4 etasje, Engebrets vei 3",
+          "postalCode": "0275",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "980402258"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AXIS REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/axis-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Henrik Ibsens gate 90",
+          "postalCode": "0255",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "912202429"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AZETS AS",
+        "url": "https://osloregnskap.no/firma/azets-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Drammensveien 151",
+          "postalCode": "0277",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "917774447"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "item": {
+        "@type": "AccountingService",
+        "name": "AZETS INSIGHT AS",
+        "url": "https://osloregnskap.no/firma/azets-insight-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Drammensveien 151",
+          "postalCode": "0277",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "983338917"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BAKER TILLY GRIMSRUD & CO. ANS",
+        "url": "https://osloregnskap.no/firma/baker-tilly-grimsrud-co-ans/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sigurd Syrs gate 4",
+          "postalCode": "0273",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "948315963"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BALANCO ACCOUNTING AS",
+        "url": "https://osloregnskap.no/firma/balanco-accounting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Grev Wedels plass 5",
+          "postalCode": "0151",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "913504372"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 55,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BDO AS",
+        "url": "https://osloregnskap.no/firma/bdo-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bygdøy allé 2",
+          "postalCode": "0257",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "993606650"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 56,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BERGE & LUNDAL REVISJONSSELSKAP AS",
+        "url": "https://osloregnskap.no/firma/berge-lundal-revisjonsselskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Tordenskiolds gate 8",
+          "postalCode": "0160",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "930443069"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BJUG A. BORGUND AS",
+        "url": "https://osloregnskap.no/firma/bjug-a-borgund-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Olav Vs gate 5",
+          "postalCode": "0161",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "933620603"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 58,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BJØRN BIRKELAND ØKONOMI AS",
+        "url": "https://osloregnskap.no/firma/bjorn-birkeland-okonomi-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Briskebyveien 86A",
+          "postalCode": "0259",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "966055553"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 59,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BK REGNSKAPSSERVICE AS",
+        "url": "https://osloregnskap.no/firma/bk-regnskapsservice-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Tvetenveien 170",
+          "postalCode": "0671",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "916552858"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 60,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BLOKSBJERG REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/bloksbjerg-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "c/o Pål W. Hammerstad, Sørkedalsveien 236A",
+          "postalCode": "0754",
+          "addressLocality": "Oslo",
+          "addressRegion": "Vestre Aker",
+          "addressCountry": "NO"
+        },
+        "identifier": "928254372"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 61,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BOKHOLDERI AS",
+        "url": "https://osloregnskap.no/firma/bokholderi-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bjørn Bondes vei 147",
+          "postalCode": "1253",
+          "addressLocality": "Oslo",
+          "addressRegion": "Søndre Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "974541416"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 62,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BOMULIA AS",
+        "url": "https://osloregnskap.no/firma/bomulia-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Grenseveien 99",
+          "postalCode": "0663",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "917531307"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 63,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BOOX AS",
+        "url": "https://osloregnskap.no/firma/boox-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Drammensveien 167",
+          "postalCode": "0277",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "921843607"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 64,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BUSINESSPARTNER AS",
+        "url": "https://osloregnskap.no/firma/businesspartner-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kristianiasvingen 76",
+          "postalCode": "0782",
+          "addressLocality": "Oslo",
+          "addressRegion": "Vestre Aker",
+          "addressCountry": "NO"
+        },
+        "identifier": "955243420"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 65,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BYGDØY REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/bygdoy-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Åsaveien 7B",
+          "postalCode": "0362",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "936926169"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 66,
+      "item": {
+        "@type": "AccountingService",
+        "name": "BØLGEN ØKONOMIPARTNER AS",
+        "url": "https://osloregnskap.no/firma/bolgen-okonomipartner-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kongsveien 90",
+          "postalCode": "1177",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "935018366"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 67,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CALCULARE AS",
+        "url": "https://osloregnskap.no/firma/calculare-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Stortorvet 7",
+          "postalCode": "0155",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "895627542"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 68,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CAPGUARD ACCOUNTING AS",
+        "url": "https://osloregnskap.no/firma/capguard-accounting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Haakon VIIs gate 1",
+          "postalCode": "0161",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "998916135"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 69,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CBK REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/cbk-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Priorveien 1A",
+          "postalCode": "0377",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "998412536"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 70,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CEDRA NORGE AS",
+        "url": "https://osloregnskap.no/firma/cedra-norge-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dronning Eufemias gate 16",
+          "postalCode": "0191",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "935416779"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 71,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CEDRA NORGE RAGO AS",
+        "url": "https://osloregnskap.no/firma/cedra-norge-rago-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dronning Eufemias gate 16",
+          "postalCode": "0191",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "835496252"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 72,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CHRISTIANIA REGNSKAPSKONTOR AS",
+        "url": "https://osloregnskap.no/firma/christiania-regnskapskontor-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Grensen 9",
+          "postalCode": "0159",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "984868650"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 73,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CHRISTINE & CO AS",
+        "url": "https://osloregnskap.no/firma/christine-co-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lybekkveien 9",
+          "postalCode": "0772",
+          "addressLocality": "Oslo",
+          "addressRegion": "Vestre Aker",
+          "addressCountry": "NO"
+        },
+        "identifier": "989655337"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 74,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CK HOLDING AS",
+        "url": "https://osloregnskap.no/firma/ck-holding-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Schwensens gate 5",
+          "postalCode": "0170",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "936814948"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 75,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CLARENCE PARK AS",
+        "url": "https://osloregnskap.no/firma/clarence-park-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karihaugveien 89",
+          "postalCode": "1086",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "911841428"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 76,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CLARKSONS BUSINESS MANAGEMENT AS",
+        "url": "https://osloregnskap.no/firma/clarksons-business-management-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Munkedamsveien 62C",
+          "postalCode": "0270",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "986778772"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 77,
+      "item": {
+        "@type": "AccountingService",
+        "name": "COMPUTA AS",
+        "url": "https://osloregnskap.no/firma/computa-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Holmenveien 5C",
+          "postalCode": "0374",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "933064654"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 78,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CONNECT ACCOUNTING SERVICES AS",
+        "url": "https://osloregnskap.no/firma/connect-accounting-services-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bogstadveien 41A",
+          "postalCode": "0366",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "925375160"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 79,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CONTABIL AS",
+        "url": "https://osloregnskap.no/firma/contabil-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bogstadveien 27B",
+          "postalCode": "0355",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "923650997"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 80,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CONTROL PLUS AS",
+        "url": "https://osloregnskap.no/firma/control-plus-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Grenseveien 82",
+          "postalCode": "0663",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "993738077"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 81,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CONTÉR SERVICES AS",
+        "url": "https://osloregnskap.no/firma/conter-services-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lørenfaret 1B",
+          "postalCode": "0585",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grünerløkka",
+          "addressCountry": "NO"
+        },
+        "identifier": "922919917"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 82,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CORRECT ACCOUNTING AS",
+        "url": "https://osloregnskap.no/firma/correct-accounting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karihaugveien 89",
+          "postalCode": "1086",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "931556258"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 83,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CORVUS ACCOUNTING AS",
+        "url": "https://osloregnskap.no/firma/corvus-accounting-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sehesteds gate 6",
+          "postalCode": "0164",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "976236467"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 84,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CREDIT & DEBIT VISION AS",
+        "url": "https://osloregnskap.no/firma/credit-debit-vision-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "c/o Inger Johanne Skjerve, Hoffselvpromenaden 2",
+          "postalCode": "0279",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "979523815"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 85,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CREDO REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/credo-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sponstugrenda 24",
+          "postalCode": "1263",
+          "addressLocality": "Oslo",
+          "addressRegion": "Søndre Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "997966147"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 86,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CROWE PARTNER REVISJON AS",
+        "url": "https://osloregnskap.no/firma/crowe-partner-revisjon-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dronning Mauds gate 10",
+          "postalCode": "0250",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "922829845"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 87,
+      "item": {
+        "@type": "AccountingService",
+        "name": "CUENTAS AS",
+        "url": "https://osloregnskap.no/firma/cuentas-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Herslebs gate 47B",
+          "postalCode": "0578",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grünerløkka",
+          "addressCountry": "NO"
+        },
+        "identifier": "918764216"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 88,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DAHL OG AARNES REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/dahl-og-aarnes-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rosenhoffgata 2C",
+          "postalCode": "0569",
+          "addressLocality": "Oslo",
+          "addressRegion": "Grünerløkka",
+          "addressCountry": "NO"
+        },
+        "identifier": "991624473"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 89,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DAIMYO MANAGEMENT AS",
+        "url": "https://osloregnskap.no/firma/daimyo-management-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Uranienborg terrasse 9",
+          "postalCode": "0351",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "990294410"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 90,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DELIB ØKONOMI AS",
+        "url": "https://osloregnskap.no/firma/delib-okonomi-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Fredensborgveien 27B",
+          "postalCode": "0177",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "922693528"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 91,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DELOITTE AS",
+        "url": "https://osloregnskap.no/firma/deloitte-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dronning Eufemias gate 14",
+          "postalCode": "0191",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "980211282"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 92,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DELTA REGNSKAP OG LØNN AS",
+        "url": "https://osloregnskap.no/firma/delta-regnskap-og-lonn-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "c/o Linda Pedersen, Grefsenkollveien 3A",
+          "postalCode": "0490",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordre Aker",
+          "addressCountry": "NO"
+        },
+        "identifier": "934890922"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 93,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DELTA REGNSKAP SYD AS",
+        "url": "https://osloregnskap.no/firma/delta-regnskap-syd-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bogstadveien 6",
+          "postalCode": "0355",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "993811793"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 94,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DESIMAL AS",
+        "url": "https://osloregnskap.no/firma/desimal-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Olaf Helsets vei 1C",
+          "postalCode": "0694",
+          "addressLocality": "Oslo",
+          "addressRegion": "Østensjø",
+          "addressCountry": "NO"
+        },
+        "identifier": "995727919"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 95,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DET LILLE AS",
+        "url": "https://osloregnskap.no/firma/det-lille-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rosenborggata 19C",
+          "postalCode": "0356",
+          "addressLocality": "Oslo",
+          "addressRegion": "Ullern",
+          "addressCountry": "NO"
+        },
+        "identifier": "976938119"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 96,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DEUTSCH-NORWEGISCHE HANDELSKAMMER SERVICES AS",
+        "url": "https://osloregnskap.no/firma/deutsch-norwegische-handelskammer-services-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Drammensveien 111B",
+          "postalCode": "0273",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "992697946"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 97,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DIALOG REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/dialog-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "c/o House Of Business, Hoffsveien 1A",
+          "postalCode": "0275",
+          "addressLocality": "Oslo",
+          "addressRegion": "Frogner",
+          "addressCountry": "NO"
+        },
+        "identifier": "923401946"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 98,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DIGITAL ØKONOMI AS",
+        "url": "https://osloregnskap.no/firma/digital-okonomi-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karihaugveien 89",
+          "postalCode": "1086",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordstrand",
+          "addressCountry": "NO"
+        },
+        "identifier": "922632510"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 99,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DIGNITAS REGNSKAP AS",
+        "url": "https://osloregnskap.no/firma/dignitas-regnskap-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Nydalsveien 28",
+          "postalCode": "0484",
+          "addressLocality": "Oslo",
+          "addressRegion": "Nordre Aker",
+          "addressCountry": "NO"
+        },
+        "identifier": "996455289"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 100,
+      "item": {
+        "@type": "AccountingService",
+        "name": "DITT DIGITALE REGNSKAPSKONTOR AS",
+        "url": "https://osloregnskap.no/firma/ditt-digitale-regnskapskontor-as/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2. etasje, Fridtjof Nansens plass 4",
+          "postalCode": "0160",
+          "addressLocality": "Oslo",
+          "addressRegion": "Sentrum",
+          "addressCountry": "NO"
+        },
+        "identifier": "925174149"
+      }
+    }
+  ]
+}

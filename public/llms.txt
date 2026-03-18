@@ -1,0 +1,45 @@
+# OsloRegnskap.no
+
+> Komplett oversikt over regnskapstjenester i Oslo. Katalog med 386 registrerte regnskapsfirmaer, guider om priser, valg av regnskapsfører, og informasjon om regnskap for ulike selskapsformer.
+
+## Hovedsider
+- [Regnskap Oslo](https://osloregnskap.no/): Hovedside med oversikt over regnskapstjenester i Oslo
+- [Regnskapsfører Oslo](https://osloregnskap.no/regnskapsforer/): Komplett liste over regnskapsførere i Oslo
+- [Regnskapskontor Oslo](https://osloregnskap.no/regnskapskontor/): Oversikt over regnskapskontor i Oslo
+- [Regnskapsbyrå Oslo](https://osloregnskap.no/regnskapsbyra/): Informasjon om regnskapsbyråer i Oslo
+- [Autorisert regnskapsfører Oslo](https://osloregnskap.no/autorisert-regnskapsforer/): Om autorisasjon for regnskapsførere
+
+## Guider
+- [Hva koster regnskapsfører i Oslo?](https://osloregnskap.no/hva-koster-regnskapsforer-oslo/): Priser og priseksempler
+- [Hvordan velge regnskapsfører](https://osloregnskap.no/hvordan-velge-regnskapsforer-oslo/): Guide for valg av regnskapsfører
+- [Beste regnskapskontor Oslo](https://osloregnskap.no/beste-regnskapskontor-oslo/): Kriterier for å finne beste kontor
+- [Regnskap for ENK](https://osloregnskap.no/regnskap-for-enkeltpersonforetak-oslo/): Regnskap for enkeltpersonforetak
+- [Regnskap for AS](https://osloregnskap.no/regnskap-for-as-oslo/): Regnskap for aksjeselskap
+- [Hjelp med regnskap](https://osloregnskap.no/hjelp-med-regnskap-oslo/): Oversikt over regnskapshjelp
+
+## Katalog
+- [Alle regnskapsfirmaer](https://osloregnskap.no/firmaer/): Komplett katalog med 386 firmaer
+- [Regnskapskontorer](https://osloregnskap.no/regnskapskontorer/): Alle regnskapskontorer i Oslo
+
+## Per bydel
+- [Regnskapsfører Sentrum](https://osloregnskap.no/regnskapsforer-sentrum/)
+- [Regnskapsfører Frogner](https://osloregnskap.no/regnskapsforer-frogner/)
+- [Regnskapsfører Østensjø](https://osloregnskap.no/regnskapsforer-ostensjo/)
+- [Regnskapsfører Grünerløkka](https://osloregnskap.no/regnskapsforer-grunerlokka/)
+- [Regnskapsfører Nordstrand](https://osloregnskap.no/regnskapsforer-nordstrand/)
+- [Regnskapsfører Ullern](https://osloregnskap.no/regnskapsforer-ullern/)
+- [Regnskapsfører Nordre Aker](https://osloregnskap.no/regnskapsforer-nordre-aker/)
+- [Regnskapsfører Gamle Oslo](https://osloregnskap.no/regnskapsforer-gamle-oslo/)
+- [Regnskapsfører Søndre Nordstrand](https://osloregnskap.no/regnskapsforer-sondre-nordstrand/)
+- [Regnskapsfører Stovner](https://osloregnskap.no/regnskapsforer-stovner/)
+- [Regnskapsfører Vestre Aker](https://osloregnskap.no/regnskapsforer-vestre-aker/)
+- [Regnskapsfører Alna](https://osloregnskap.no/regnskapsforer-alna/)
+- [Regnskapsfører Grorud](https://osloregnskap.no/regnskapsforer-grorud/)
+- [Regnskapsfører Sagene](https://osloregnskap.no/regnskapsforer-sagene/)
+- [Regnskapsfører St. Hanshaugen](https://osloregnskap.no/regnskapsforer-st-hanshaugen/)
+- [Regnskapsfører Bjerke](https://osloregnskap.no/regnskapsforer-bjerke/)
+
+## Data
+Alle firmaopplysninger er hentet fra Brønnøysundregistrene (Enhetsregisteret).
+Firmaer er registrert under næringskode 69.202 (regnskapsføring og bokføring) eller 69.201 (revisjon).
+Totalt 386 aktive regnskapsfirmaer med forretningsadresse i Oslo.
