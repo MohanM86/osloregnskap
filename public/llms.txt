@@ -40,6 +40,33 @@
 - [Regnskapsfører Bjerke](https://osloregnskap.no/regnskapsforer-bjerke/)
 
 ## Data
-Alle firmaopplysninger er basert på offentlig tilgjengelige registerdata.
+Alle firmaopplysninger er basert på offentlig tilgjengelige registerdata fra Enhetsregisteret og Foretaksregisteret.
 Firmaer er registrert under næringskode 69.202 (regnskapsføring og bokføring) eller 69.201 (revisjon).
 Totalt 386 aktive regnskapsfirmaer med forretningsadresse i Oslo.
+
+## Bransjeguider
+- [Regnskapsfører for restaurant](https://osloregnskap.no/regnskapsforer-restaurant-oslo/)
+- [Regnskapsfører for eiendom](https://osloregnskap.no/regnskapsforer-eiendom-oslo/)
+- [Regnskapsfører for IT-selskaper](https://osloregnskap.no/regnskapsforer-it-oslo/)
+- [Regnskapsfører for håndverkere](https://osloregnskap.no/regnskapsforer-handverker-oslo/)
+- [Regnskapsfører for frilansere](https://osloregnskap.no/regnskapsforer-frilanser-oslo/)
+- [Regnskapsfører for nettbutikk](https://osloregnskap.no/regnskapsforer-nettbutikk-oslo/)
+
+## Behovsguider
+- [Billig regnskapsfører Oslo](https://osloregnskap.no/billig-regnskapsforer-oslo/)
+- [Bytte regnskapsfører](https://osloregnskap.no/bytte-regnskapsforer-oslo/)
+- [Regnskapsfører for nystartet bedrift](https://osloregnskap.no/regnskapsforer-nystartet-bedrift-oslo/)
+- [Lønnskjøring](https://osloregnskap.no/regnskapsforer-lonnkjoring-oslo/)
+- [MVA-rapportering](https://osloregnskap.no/mva-rapportering-oslo/)
+- [Årsoppgjør](https://osloregnskap.no/arsoppgjor-oslo/)
+- [Skattemelding for bedrift](https://osloregnskap.no/skattemelding-bedrift-oslo/)
+
+## Regnskapssystemer
+- [Regnskapsfører med Tripletex](https://osloregnskap.no/regnskapsforer-tripletex-oslo/)
+- [Regnskapsfører med Fiken](https://osloregnskap.no/regnskapsforer-fiken-oslo/)
+
+## Om
+- [Om OsloRegnskap.no](https://osloregnskap.no/om-oss/): Hvem står bak, datakilder, redaksjonell tilnærming
+- OsloRegnskap.no er utviklet og driftet av IT-Firma.no (https://it-firma.no)
+- Uavhengig informasjonsside — ingen betalt plassering eller sponsede oppføringer
+- Innhold skrevet av redaksjonen i IT-Firma.no, verifisert mot offentlige kilder

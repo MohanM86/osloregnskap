@@ -60,8 +60,8 @@ export function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} OsloRegnskap..no — Uavhengig informasjonsside om regnskapstjenester i Oslo</span>
-          <span>Offentlig registerdata</span>
+          <span>© {new Date().getFullYear()} OsloRegnskap.no — En del av <a href="https://it-firma.no" target="_blank" rel="noopener" style={{ color: 'rgba(255,255,255,0.35)' }}>IT-Firma.no</a></span>
+          <span><Link href="/om-oss/" style={{ color: 'rgba(255,255,255,0.35)' }}>Om oss</Link> · Offentlig registerdata</span>
         </div>
       </div>
     </footer>
@@ -114,6 +114,7 @@ export function InternalLinks({ exclude }: { exclude?: string }) {
     { href: '/regnskapsforer-frilanser-oslo/', label: 'Frilansere' },
     { href: '/mva-rapportering-oslo/', label: 'MVA-rapportering' },
     { href: '/arsoppgjor-oslo/', label: 'Årsoppgjør' },
+    { href: '/om-oss/', label: 'Om oss' },
     ...Object.values(BYDELER_INFO).slice(0, 6).map(b => ({
       href: `/regnskapsforer-${b.urlSlug}/`,
       label: b.displayName,

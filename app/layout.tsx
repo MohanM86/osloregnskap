@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   description: 'Finn regnskapsfører, regnskapskontor og regnskapsbyrå i Oslo. Komplett katalog med 386 registrerte regnskapsfirmaer fordelt på 15 bydeler. ',
   keywords: ['regnskap oslo', 'regnskapsfører oslo', 'regnskapskontor oslo', 'regnskapsbyrå oslo', 'autorisert regnskapsfører oslo', 'bokføring oslo', 'regnskapsfirma oslo'],
-  authors: [{ name: 'OsloRegnskap.no' }],
-  creator: 'OsloRegnskap.no',
+  authors: [{ name: 'IT-Firma.no', url: 'https://it-firma.no' }],
+  creator: 'IT-Firma.no',
   publisher: 'OsloRegnskap.no',
   robots: {
     index: true,
@@ -59,13 +59,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: 'OsloRegnskap.no',
     url: 'https://osloregnskap.no',
     logo: 'https://osloregnskap.no/icon-512.png',
-    description: 'Komplett og uavhengig oversikt over regnskapstjenester i Oslo. Katalog med 386 registrerte regnskapsfirmaer ',
+    description: 'Komplett og uavhengig oversikt over regnskapstjenester i Oslo. Katalog med 386 registrerte regnskapsfirmaer.',
+    foundingDate: '2026',
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'IT-Firma.no',
+      url: 'https://it-firma.no',
+    },
     areaServed: {
       '@type': 'City',
       name: 'Oslo',
       '@id': 'https://www.wikidata.org/wiki/Q585',
     },
-    sameAs: [],
+    knowsAbout: ['Regnskap', 'Regnskapsfører', 'Revisjon', 'Bokføring', 'MVA-rapportering', 'Årsoppgjør', 'Skattemelding'],
+    sameAs: ['https://it-firma.no'],
   };
 
   const siteNavSchema = {
