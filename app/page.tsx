@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getAllFirms, getBydeler, BYDELER_INFO } from '@/lib/data';
 import { Breadcrumb, InternalLinks, SchemaFAQ } from '@/lib/components';
-import { AnimatedStat, BarChart, TimelineChart, DonutChart, FAQAccordion } from '@/lib/client-components';
+import { AnimatedStat, BarChart, TimelineChart, DonutChart, FAQAccordion, CompactCatalog } from '@/lib/client-components';
 import { IconPin, IconBuilding, IconChart, IconCoin, IconBook, IconShield, IconCalendar, SectionLabel } from '@/lib/icons';
 import { seo } from '@/lib/seo';
 
@@ -86,6 +86,19 @@ export default function HomePage() {
         <AnimatedStat value={revisorer.length} label="Revisjonsfirmaer" />
         <AnimatedStat value={bydeler.length} label="Bydeler dekket" />
       </div>
+
+      {/* Full firm catalog — all 386 in HTML, grouped by bydel */}
+      <section className="section-block animate-in animate-in-4">
+        <SectionLabel icon={<IconBuilding size={16} />} text="Katalog" />
+        <CompactCatalog
+          firms={firms}
+          bydeler={bydeler.map(b => ({
+            name: b.name,
+            slug: BYDELER_INFO[b.name]?.urlSlug || b.slug,
+            count: b.count,
+          }))}
+        />
+      </section>
 
       {/* Charts row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1rem', margin: '2rem 0' }} className="animate-in animate-in-4">

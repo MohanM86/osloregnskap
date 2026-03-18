@@ -339,3 +339,61 @@ export function FirmExplorer({
     </div>
   );
 }
+
+/* ─── Compact Catalog (all firms grouped by bydel, CSS overflow) ─── */
+export function CompactCatalog({ firms, bydeler }: { firms: Firm[]; bydeler: { name: string; slug: string; count: number }[] }) {
+  const [expanded, setExpanded] = useState(false);
+  const INITIAL_BYDELER = 5;
+
+  const grouped = useMemo(() => {
+    const map = new Map<string, Firm[]>();
+    for (const b of bydeler) {
+      map.set(b.name, firms.filter(f => f.bydel === b.name));
+    }
+    return map;
+  }, [firms, bydeler]);
+
+  const visibleBydeler = expanded ? bydeler : bydeler.slice(0, INITIAL_BYDELER);
+  const hiddenCount = bydeler.slice(INITIAL_BYDELER).reduce((s, b) => s + b.count, 0);
+
+  return (
+    <div>
+      <div style={{ borderBottom: '2px solid #111', paddingBottom: '4px', marginBottom: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <span style={{ fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' as const, color: '#999' }}>
+          {firms.length} regnskapsfirmaer i Oslo
+        </span>
+        <span style={{ fontSize: '0.72rem', color: '#999' }}>Sortert etter bydel</span>
+      </div>
+
+      {visibleBydeler.map(b => {
+        const bydelFirms = grouped.get(b.name) || [];
+        return (
+          <div key={b.name} style={{ marginBottom: '14px' }}>
+            <div style={{ fontSize: '0.82rem', fontWeight: 700, marginBottom: '2px', letterSpacing: '-0.02em' }}>
+              <Link href={`/regnskapsforer-${b.slug}/`}>{b.name}</Link>{' '}
+              <span style={{ fontWeight: 300, color: '#999' }}>({bydelFirms.length})</span>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0 16px', fontSize: '0.72rem', color: '#555', fontWeight: 300, lineHeight: 1.9 }}>
+              {bydelFirms.map(f => (
+                <Link key={f.orgnr} href={`/firma/${f.slug}/`} style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' as const }}>
+                  {f.navn}
+                </Link>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+
+      {!expanded && bydeler.length > INITIAL_BYDELER && (
+        <div style={{ textAlign: 'center', paddingTop: '8px', borderTop: '1px solid #e5e5e5', marginTop: '4px' }}>
+          <button
+            onClick={() => setExpanded(true)}
+            style={{ fontSize: '0.72rem', padding: '6px 20px', cursor: 'pointer', fontFamily: 'inherit', border: '1px solid #e5e5e5', background: 'none', color: '#555' }}
+          >
+            Vis alle {bydeler.length} bydeler (+{hiddenCount} firmaer)
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
