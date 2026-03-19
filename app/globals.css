@@ -320,3 +320,60 @@ html, body { overflow-x: hidden; }
 .bydel-link-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; }
 .bydel-link-grid a { background: var(--mint-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--fg); transition: all var(--transition); }
 .bydel-link-grid a:hover { border-color: var(--green-mid); transform: translateY(-1px); text-decoration: none; }
+
+/* Hero pills — horizontal badges */
+.hero-pills { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.25rem 0 1.75rem; position: relative; }
+.hero-pill {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  padding: 0.45rem 0.85rem; font-size: 0.82rem; font-weight: 500;
+  background: rgba(255,255,255,0.65); border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 2rem; color: var(--fg); backdrop-filter: blur(4px);
+}
+.hero-pill svg { color: var(--green-mid); flex-shrink: 0; }
+
+/* Stat cards — glassmorphism on mint */
+.stats-cards {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.65rem;
+  margin: 1.5rem 0 2rem; 
+}
+.stat-card-new {
+  background: var(--mint-light); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.1rem 1rem;
+  text-align: center; position: relative; overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-card-new::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 3px; background: var(--green-mid);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
+}
+.stat-card-new:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,61,46,0.08); }
+.stat-card-new:hover::after { transform: scaleX(1); }
+.stat-card-new .stat-num { font-size: 1.75rem; }
+.stat-card-new .stat-label { font-size: 0.7rem; }
+
+/* Staggered entrance for stat cards */
+.stats-cards .stat-card-new:nth-child(1) { animation: statPop 0.5s 0.1s ease both; }
+.stats-cards .stat-card-new:nth-child(2) { animation: statPop 0.5s 0.2s ease both; }
+.stats-cards .stat-card-new:nth-child(3) { animation: statPop 0.5s 0.3s ease both; }
+.stats-cards .stat-card-new:nth-child(4) { animation: statPop 0.5s 0.4s ease both; }
+@keyframes statPop {
+  0% { opacity: 0; transform: translateY(16px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 768px) {
+  .hero-pills { justify-content: flex-start; gap: 0.35rem; margin: 1rem 0 1.5rem; }
+  .hero-pill { font-size: 0.75rem; padding: 0.35rem 0.7rem; }
+  .hero-pill svg { width: 12px; height: 12px; }
+  .stats-cards { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .stat-card-new { padding: 0.85rem 0.75rem; }
+  .stat-card-new .stat-num { font-size: 1.4rem; }
+  .stat-card-new .stat-label { font-size: 0.62rem; }
+}
+@media (max-width: 480px) {
+  .hero-pills { flex-direction: column; align-items: flex-start; }
+  .stats-cards { gap: 0.4rem; }
+  .stat-card-new .stat-num { font-size: 1.2rem; }
+}

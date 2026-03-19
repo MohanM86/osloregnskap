@@ -79,21 +79,21 @@ export default function HomePage() {
           Oppdatert, uavhengig og fullstendig.
         </p>
 
-        <div className="hero-checks animate-in animate-in-3">
-          <span className="hero-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> {firms.length} firmaer</span>
-          <span className="hero-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> {bydeler.length} bydeler</span>
-          <span className="hero-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> Offentlige data</span>
+        <div className="hero-pills animate-in animate-in-3">
+          <span className="hero-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>{firms.length} firmaer</span>
+          <span className="hero-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>{bydeler.length} bydeler</span>
+          <span className="hero-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>Offentlige data</span>
         </div>
 
         <HeroSearch />
       </section>
 
-      {/* Stats */}
-      <div className="stats-row animate-in animate-in-3">
-        <AnimatedStat value={firms.length} label="Firmaer totalt" />
-        <AnimatedStat value={regnskapForere.length} label="Regnskap" />
-        <AnimatedStat value={revisorer.length} label="Revisjon" />
-        <AnimatedStat value={bydeler.length} label="Bydeler" />
+      {/* Stats — animated cards */}
+      <div className="stats-cards animate-in animate-in-3">
+        <div className="stat-card-new"><AnimatedStat value={firms.length} label="Firmaer totalt" /></div>
+        <div className="stat-card-new"><AnimatedStat value={regnskapForere.length} label="Regnskap" /></div>
+        <div className="stat-card-new"><AnimatedStat value={revisorer.length} label="Revisjon" /></div>
+        <div className="stat-card-new"><AnimatedStat value={bydeler.length} label="Bydeler" /></div>
       </div>
 
       {/* Chip filters + firm grid — Google layout */}
